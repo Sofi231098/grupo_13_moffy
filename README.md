@@ -19,11 +19,19 @@ Detrás de Moffy Sports, se encuentran dos apasionados por las zapatillas:
 ### [• Maximiliano Joaquín Carrillo](https://github.com/MaxiCarrillo) 🐢
 → Programador 👨‍💻
 
+→ 22 años 🕛
+
+→ Rock, mates y fútbol ⭐⭐⭐
+
 → Joven inexperto como Scaloni 🤔🏆❓
 
 
 ### [• Sofía Trinidad Yáñez](https://github.com/Sofi231098) 🦋
 → Futura programadora 🔜👩‍💻
+
+→ 25 años 🕛
+
+→ Mates, series y michis 🌠
 
 → Le dicen Julian Alvarez porque da suerte 🤟🕸
 
