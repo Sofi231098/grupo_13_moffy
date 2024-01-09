@@ -14,4 +14,4 @@ Los resultados obtenidos son mejores de los que esperábamos. Estamos muy felice
 
 Por ahora consideramos que no tuvimos ningún inconveniente y cosas malas para destacar del primer sprint.
 
-Su buen amigo el equipo de Moffy Sports.
+### Su buen amigo el equipo de Moffy Sports 🕸️
