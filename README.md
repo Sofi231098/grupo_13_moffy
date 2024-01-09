@@ -23,7 +23,10 @@ Detrás de Moffy Sports, se encuentran dos apasionados por las zapatillas:
 
 → Rock, mates y fútbol ⭐⭐⭐
 
+→ Github: @MaxCarrillo
+
 → Joven inexperto como Scaloni 🤔🏆❓
+
 
 
 ### [• Sofía Trinidad Yáñez](https://github.com/Sofi231098) 🦋
@@ -33,7 +36,10 @@ Detrás de Moffy Sports, se encuentran dos apasionados por las zapatillas:
 
 → Mates, series y michis 🌠
 
+→ Github: @sofi231098
+
 → Le dicen Julian Alvarez porque da suerte 🤟🕸
+
 
 100% ADN MOFFY SPORTS 🧬
 ## REFERENTES
