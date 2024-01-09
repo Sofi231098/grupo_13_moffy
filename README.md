@@ -23,7 +23,7 @@ Detrás de Moffy Sports, se encuentran dos apasionados por las zapatillas:
 
 → Rock, mates y fútbol ⭐⭐⭐
 
-→ Github: @MaxCarrillo
+→ Github: @MaxiCarrillo
 
 → Joven inexperto como Scaloni 🤔🏆❓
 
