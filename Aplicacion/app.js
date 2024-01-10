@@ -11,3 +11,15 @@ app.listen(3000, () => {
 app.get('/home', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'views/home.html'));
 });
+
+app.get('/detalle', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'views/detalle.html'));
+});
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'views/login.html'));
+});
+
+app.get('/productos', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'views/productos.html'));
+});
