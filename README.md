@@ -40,6 +40,7 @@ Detrás de Moffy Sports, se encuentran dos apasionados por las zapatillas:
 
 → Le dicen Julian Alvarez porque da suerte 🤟🕸
 
+### [• Tablero de trabajo](https://github.com/users/Sofi231098/projects/8/views/1)
 
 100% ADN MOFFY SPORTS 🧬
 ## REFERENTES
