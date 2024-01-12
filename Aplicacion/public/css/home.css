@@ -1,0 +1,168 @@
+.mainHome{
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+/* Section Dashboard */
+
+.dashboardHome{
+    width: 100%;
+    display: grid;
+    gap: 16px;
+
+    & article{
+        padding: 15px 4px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        font-size: 2rem;
+        font-weight: 700;
+
+        & p, & h2{
+            margin: 0;
+        }
+    }
+}
+
+.nuevosProductos{
+    
+    background: linear-gradient(to bottom, #ff165c 0%, #69006d 75%);
+
+    & > img{
+        margin-inline: auto;
+        margin-bottom: 15px;
+        height: 200px;
+        border-radius: 100%;
+    }
+}
+
+.buscarProductos{
+    background-color: #fff;
+    color: #111;
+
+    & > .fa-magnifying-glass{
+        margin-bottom: 15px;
+        font-size: 150px;
+    }
+}
+
+.item{
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.3) 0%, #111 100%);
+    color: #fff;
+
+    & > .fa-credit-card, & > .fa-truck, & > .fa-shield-halved{
+        margin-bottom: 10px;
+        font-size: 100px;
+    }
+
+    & p{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+@media (width > 480px) {
+    .dashboardHome{
+        & article{
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (width > 768px ){
+
+    .dashboardHome{
+
+        grid-template-areas:    "primerItem primerItem segundoItem"
+                                "tercerItem cuartoItem quintoItem";
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+        & article:first-child{
+            grid-area: primerItem;
+        }
+    
+        & article:nth-child(2){
+            grid-area: segundoItem;
+        }
+    
+        & article:nth-child(3){
+            grid-area: tercerItem;
+        }
+    
+        & article:nth-child(4){
+            grid-area: cuartoItem;
+        }
+    
+        & article:last-child{
+            grid-area: quintoItem;
+        }
+    }
+}
+
+/* Section QUINES SOMOS */
+
+.sectionQuienesSomos{
+    margin-top: 50px;
+}
+
+.quienesSomos__titulo{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.quienesSomos__container{
+    display: grid;
+    justify-items: center;
+}
+
+.quienesSomos__figure{
+    width: 100%;
+    max-width: 500px;
+}
+
+.quienesSomos__figure > img{
+    width: 100%;
+}
+
+.quienesSomos__containerParrafos{
+    width: 100%;
+    max-width: 500px;
+}
+
+.quienesSomos__containerParrafos > p{
+    text-align: justify;
+}
+
+.parrafo__em{
+    color: #ff3270;
+}
+
+@media (width > 480px){
+    .quienesSomos__figure > img{
+        border-radius: 10px;
+    }
+}
+
+@media (width > 768px ){
+
+    .quienesSomos__figure > img{
+        box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.50);
+    }
+
+    .quienesSomos__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .quienesSomos__containerParrafos{
+        justify-self: start;
+    }
+
+    .quienesSomos__containerParrafos > p{
+        text-align: left;
+    }
+}
