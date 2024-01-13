@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <meta name="keywords" content="Moffy Sports, MoffySports, Moffy">
     <title>Moffy Sports</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/carrito-compras.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,38 +47,62 @@
         </div>
     </header>
     <main class="mainHome">
-        <section class="dashboardHome">
-            <article class="nuevosProductos">
-                <img src="/images/adidasQUESTAR.jpg" alt="Adidas QUESTAR">
-                <h2>NUEVOS INGRESOS</h2>
-            </article>
-            <article class="buscarProductos">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <h2>BUSCAR</h2>
-            </article>
-            <article class="item">
-                <i class="fa-solid fa-credit-card"></i>
-                <p>Podés pagar con tarjeta, débito o efectivo.</p>
-            </article>
-            <article class="item">
-                <i class="fa-solid fa-truck"></i>
-                <p>Envío gratis desde $ 16.000</p>
-            </article>
-            <article class="item">
-                <i class="fa-solid fa-shield-halved"></i>
-                <p>Seguridad, de principio a fin</p>
-            </article>
-        </section>
-        <section class="sectionQuienesSomos">
-            <div class="quienesSomos__container">
-                <figure class="quienesSomos__figure">
-                    <img src="/images/homeQS.jpg" alt="Imagen descriptiva de quienes somos de Moffy Sport" />
-                </figure>
-                <div class="quienesSomos__containerParrafos">
-                    <h2 class="quienesSomos__titulo">¿QUIENES SOMOS?</h2>
-                    <p>Somos una <em class="parrafo__em">tienda especializada en zapatillas deportivas</em> que fusiona la moda, la comodidad y el estilo en cada paso que das.</p>
-                    <p>En nuestro sitio, te ofrecemos una selección cuidadosa de las últimas colecciones de zapatillas deportivas de marcas destacadas como Adidas, Nike, Puma, y más.</p>
+        <div class="sectionCarritoCompras">
+            <section class="itemsCarritoContainer block">
+                <article class="itemCarrito">
+                    <figure>
+                        <img class="itemCarrito__img" src="/images/adidasForumLow.jpg" alt="Adidas Forum Low"
+                            loading="lazy">
+                    </figure>
+                    <div>
+                        <h2 class="itemCarrito__titulo">Adidas Forum Low</h2>
+                        <div class="itemCarrito__precioContainer">
+                            <p class="color--secondary">$120000 x 1</p>
+                            <p class="color--pink">$120000</p>
+                        </div>
+                        <div class="itemCarrito__botones">
+                            <button>-</button>
+                            <p>1</p>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="itemCarrito">
+                    <figure>
+                        <img class="itemCarrito__img" src="/images/adidasForumLow.jpg" alt="Adidas Forum Low"
+                            loading="lazy">
+                    </figure>
+                    <div>
+                        <h2 class="itemCarrito__titulo">Adidas Forum Low</h2>
+                        <div class="itemCarrito__precioContainer">
+                            <p class="color--secondary">$120000 x 1</p>
+                            <p class="color--pink">$120000</p>
+                        </div>
+                        <div class="itemCarrito__botones">
+                            <button>-</button>
+                            <p>1</p>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="resumenCompraContainer block">
+                <h2 class="resumenCompra__titulo">RESUMEN DE COMPRA</h2>
+                <div class="resumenCompra__info">
+                    <p>Productos</p>
+                    <p>$29.206</p>
                 </div>
+                <div class="resumenCompra__info">
+                    <p>Envío</p>
+                    <p class="color--green">Gratis</p>
+                </div>
+                <p class="color--pink">Ingresar código de cupón</p>
+                <div class="resumenCompra__info">
+                    <p>Total</p>
+                    <p>$29.206</p>
+                </div>
+                <button class="button--pink">Continuar Compra</button>
             </div>
         </section>
     </main>
