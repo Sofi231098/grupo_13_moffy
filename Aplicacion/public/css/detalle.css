@@ -1,12 +1,19 @@
 .content-detalle
 {
   display:grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 16px;
 }
 
 .img-detalle{
   display: grid;
-  justify-content: center;
+  justify-content:flex-end;
+}
+
+@media(max-width:975px){
+  .img-detalle{
+    justify-content:center;
+  }
 }
 
 .img-detalle img{
@@ -18,21 +25,29 @@
 
 .detalle{
   box-sizing: border-box;
-  padding-left: 20px;
+  align-self: flex-start;
+  padding: 16px;
 }
 
 .detalle button{
     border-radius: 15px;
     border: 1px solid black;
     padding: 5px 10px;
+    margin-right: 5px;
+
+    &:hover{
+      background-color: rgba(255, 255, 255, 0.5);
+      color: blanchedalmond;
+    }
 }
 
 
+
 .zapatillas-colores{
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  box-sizing: border-box;
+  margin:0 auto;
 }
 
 .zapatillas-colores img{
@@ -45,25 +60,28 @@
     padding-left:20px;
 }
 
-.container-sugerencias{
-    padding-left: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
 
+
+.container-sugerencias{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-left: 16px;
+  margin-right: 16px; 
 }
 
-.container-sugerencias h3{
+
+.sugerencias h3{
     margin-top: 40px;
     grid-column-start: 1;
-    grid-column-end: 26;
-    justify-self: start;
+    grid-column-end: 6;
+    margin-left: 16px;
   }
 
-.container-sugerencias img{
-    display: grid;
-    grid-template-columns: (auto-fill, minmax(200px, 1fr));
-    height: 400px;
-    width: 300px;
-}
+  .container-sugerencias img{
+    width:100%;
+    border-radius: 10px;
+    height: 300px;
+  }
+
 
