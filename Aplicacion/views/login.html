@@ -10,8 +10,8 @@
     <meta name="keywords" content="Moffy Sports, MoffySports, Moffy">
     <title>Moffy Sports</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,7 +19,6 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/750a5cf973.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header class="header">
         <figure class="header__logo">
@@ -46,24 +45,43 @@
             </button>
         </div>
     </header>
-    <h1>Login</h1>
-    <footer class="footer">
-        <div class="footer-logo">
-            <figure class="header__logo">
-                <img class="logo__img" src="/images/moffysports.jpg" alt="Logo Moffy Sports">
-                <h1 class="header__marca">MOFFY SPORTS</h1>
-            </figure>
-        </div>
-        <p>Desarrollado con amor por M&S</p>
-        <div class="footer__redes">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                aria-label="Instagram de Moffy Sports"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                aria-label="Facebook de Moffy Sports"><i class="fa-brands fa-square-facebook"></i></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter de Moffy Sports"><i
-                    class="fa-brands fa-square-x-twitter"></i></a>
-        </div>
-    </footer>
-</body>
+    <main class="main-login">
+      <section class="form-login">
+        <h1 class="login-titulo">BIENVENIDO A MOOFY SPORT</h1>
+        <form>
 
+            <div>
+                <label for="email" class="formLabel">Correo electrónico</label>
+                <input type="email" placeholder="max11carrillo@gmail.com" id="email" class="formInput">
+            </div>
+
+            <div>
+                <label for="password" class="formLabel">Contraseña</label>
+                <input type="password" placeholder="maxcarrillo123" id="password" class="formInput">
+            </div>
+
+            <button class="boton" type="submit">Iniciar Sesión</button>
+
+        </form> 
+        <p>¿No tenés cuenta? <a href="/registro" class="link-registro">Registrarme</a></p>
+      </section>
+    </main>
+</body>
+<footer class="footer">
+    <div class="footer-logo">
+        <figure class="header__logo">
+            <img class="logo__img" src="/images/moffysports.jpg" alt="Logo Moffy Sports">
+            <h1 class="header__marca">MOFFY SPORTS</h1>
+        </figure>
+    </div>
+    <p>Desarrollado con amor por M&S</p>
+    <div class="footer__redes">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram de Moffy Sports"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook de Moffy Sports"><i class="fa-brands fa-square-facebook"></i></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter de Moffy Sports"><i
+                class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+</footer>
 </html>
