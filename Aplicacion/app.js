@@ -29,5 +29,5 @@ app.get('/productos', (req, res) => {
 });
 
 app.get('/carrito', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'views/carrito-de-compras.html'));
+    res.sendFile(path.resolve(__dirname, 'views/productCart.html'));
 });
