@@ -1,5 +1,10 @@
+.mainProducts{
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
 .search-order{
-   display:grid;
+    display:grid;
     grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
     margin-top: 30px;

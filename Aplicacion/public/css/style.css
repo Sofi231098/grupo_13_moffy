@@ -13,13 +13,17 @@ body {
     gap: 1rem;
 }
 
-
 .header__logo {
     margin: 0;
 
     display: flex;
     align-items: center;
     gap: 10px;
+
+    & > a{
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 .header__marca {
@@ -53,15 +57,27 @@ body {
 
 .header__buttons {
     flex-grow: 1;
-    text-align: end;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
 }
 
-.header__button {
+.header__icon{
+    display: block;
     height: 40px;
     width: 40px;
-    cursor: pointer;
-    border: none;
+    background-color: #fff;
+    color: #111;
     border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+    & > i{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     &:hover {
         background: rgba(255, 255, 255, 0.75);

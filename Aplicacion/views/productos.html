@@ -24,30 +24,32 @@
     <header class="header">
         <figure class="header__logo">
             <img class="logo__img" src="/images/moffysports.jpg" alt="Logo Moffy Sports">
-            <h1 class="header__marca">MOFFY SPORTS</h1>
+            <a href="/home">
+                <h1 class="header__marca">MOFFY SPORTS</h1>
+            </a>
         </figure>
         <nav class="header__navbar">
-            <a class="navbar__enlace" href="/todas">Todas</a>
-            <a class="navbar__enlace" href="/adidas">Adidas</a>
-            <a class="navbar__enlace" href="/nike">Nike</a>
-            <a class="navbar__enlace" href="/pumas">Pumas</a>
+            <a class="navbar__enlace" href="/productos">Todas</a>
+            <a class="navbar__enlace" href="/productos/adidas">Adidas</a>
+            <a class="navbar__enlace" href="/productos/nike">Nike</a>
+            <a class="navbar__enlace" href="/productos/pumas">Pumas</a>
         </nav>
         <div class="header__buttons">
-            <button class="header__button" aria-label="Carrito de Compras">
+            <a href="/carrito" class="header__icon">
                 <i class="fa-solid fa-bag-shopping"></i>
-            </button>
-            <button class="header__button" aria-label="Usuario">
+            </a>
+            <a href="/login" class="header__icon">
                 <i class="fa-solid fa-user"></i>
-            </button>
+            </a>
         </div>
         <div class="header__burgerButton">
-            <button class="burgerButton"  aria-label="Desplegar Menú">
+            <button class="burgerButton" aria-label="Desplegar Menú">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
-        <main>
-          <section class="search-order">
+    <main class="mainProducts">
+        <section class="search-order">
             <div class="search">
                 <label for="site-search">Buscar:</label>
                 <input type="search" id="site-search" name="q" />
@@ -63,36 +65,48 @@
                     <option value="Nuevos ingresos"></option>
                 </datalist>
             </div>
-          </section>
-          <section class="producto-container">
+        </section>
+        <section class="producto-container">
             <article class="categoria">
                 <h3>Categoria</h3>
                 <ul>
-                  <li>Todo</li>
-                  <li>Hombre</li>
-                  <li>Mujer</li>
-                  <li>Unisex</li>
-                  <li>Ninos</li>
+                    <li>Todo</li>
+                    <li>Hombre</li>
+                    <li>Mujer</li>
+                    <li>Unisex</li>
+                    <li>Ninos</li>
                 </ul>
-              </article>
-              <article class="img-productos">
-                <img src="https://i.pinimg.com/736x/fe/8b/e3/fe8be3da5bf24730367e046328787aea.jpg" alt="Adidas Campus" title="Adidas Campus">
-                <img src="https://i.pinimg.com/564x/d1/4b/2b/d14b2b0eebf76eca17622118105fdc0e.jpg" alt="Adidas Forum Low Azules" title="Adidas Forum Low Azules">
-                <img src="https://i.pinimg.com/564x/99/44/c4/9944c42a97b70a367adc7d4239510d96.jpg" alt="Adidas Hoops 3.0" title="Adidas Hoops 3.0" >
-                <img src="https://i.pinimg.com/564x/c2/78/bd/c278bd5fe5904952908d39609d813e48.jpg" alt="Nike Air Force 1" title="Nike Air Force 1">
-                <img src="https://i.pinimg.com/564x/71/5d/43/715d43226bc72abc34ddffd4670da1e6.jpg" alt="Nike Dunk Low" title="Nike Dunk Low">
-                <img src="https://i.pinimg.com/564x/7f/9c/b8/7f9cb87cf3a3c947263cde020a92ea12.jpg" alt="Nike Blazer Mid '77" title="Nike Blazer Mid '77">
-                <img src="https://i.pinimg.com/564x/9b/30/55/9b3055bdf6dbcf57e1f1da28f43d7ebd.jpg" alt="Puma Mayze Swirl" title="Puma Mayze Swirl">
-                <img src="https://i.pinimg.com/564x/30/1d/37/301d37e831750529ef87194a4e6484bd.jpg" alt="Puma Shuffle" title="Puma Shuffle">
-                <img src="https://i.pinimg.com/564x/15/80/5b/15805b27d99b44d7aba879124d53c730.jpg" alt="Puma 180" title="Puma 180">
-                <img src="https://i.pinimg.com/564x/78/21/a2/7821a2647643f544692cb63f4e6678b6.jpg" alt="Nike Air Jrdan 1" title="Nike Air Jrdan 1">
-                <img src="https://i.pinimg.com/564x/c6/0d/c3/c60dc36673c18d8784a47bb21bc0d45e.jpg" alt="Nike M2K Tekno" title="Nike M2K Tekno">
-                <img src="https://i.pinimg.com/564x/4f/b1/7d/4fb17d9f0a879e4c43337de8f0bd644d.jpg" alt="Nike Dunk High 1985" title="Nike Dunk High 1985">
-              </article>
-          </section>
-        </main>
-     
-      
+            </article>
+            <article class="img-productos">
+                <img src="https://i.pinimg.com/736x/fe/8b/e3/fe8be3da5bf24730367e046328787aea.jpg" alt="Adidas Campus"
+                    title="Adidas Campus">
+                <img src="https://i.pinimg.com/564x/d1/4b/2b/d14b2b0eebf76eca17622118105fdc0e.jpg"
+                    alt="Adidas Forum Low Azules" title="Adidas Forum Low Azules">
+                <img src="https://i.pinimg.com/564x/99/44/c4/9944c42a97b70a367adc7d4239510d96.jpg"
+                    alt="Adidas Hoops 3.0" title="Adidas Hoops 3.0">
+                <img src="https://i.pinimg.com/564x/c2/78/bd/c278bd5fe5904952908d39609d813e48.jpg"
+                    alt="Nike Air Force 1" title="Nike Air Force 1">
+                <img src="https://i.pinimg.com/564x/71/5d/43/715d43226bc72abc34ddffd4670da1e6.jpg" alt="Nike Dunk Low"
+                    title="Nike Dunk Low">
+                <img src="https://i.pinimg.com/564x/7f/9c/b8/7f9cb87cf3a3c947263cde020a92ea12.jpg"
+                    alt="Nike Blazer Mid '77" title="Nike Blazer Mid '77">
+                <img src="https://i.pinimg.com/564x/9b/30/55/9b3055bdf6dbcf57e1f1da28f43d7ebd.jpg"
+                    alt="Puma Mayze Swirl" title="Puma Mayze Swirl">
+                <img src="https://i.pinimg.com/564x/30/1d/37/301d37e831750529ef87194a4e6484bd.jpg" alt="Puma Shuffle"
+                    title="Puma Shuffle">
+                <img src="https://i.pinimg.com/564x/15/80/5b/15805b27d99b44d7aba879124d53c730.jpg" alt="Puma 180"
+                    title="Puma 180">
+                <img src="https://i.pinimg.com/564x/78/21/a2/7821a2647643f544692cb63f4e6678b6.jpg"
+                    alt="Nike Air Jrdan 1" title="Nike Air Jrdan 1">
+                <img src="https://i.pinimg.com/564x/c6/0d/c3/c60dc36673c18d8784a47bb21bc0d45e.jpg" alt="Nike M2K Tekno"
+                    title="Nike M2K Tekno">
+                <img src="https://i.pinimg.com/564x/4f/b1/7d/4fb17d9f0a879e4c43337de8f0bd644d.jpg"
+                    alt="Nike Dunk High 1985" title="Nike Dunk High 1985">
+            </article>
+        </section>
+    </main>
+
+
     <footer class="footer">
         <div class="footer-logo">
             <figure class="header__logo">
@@ -106,8 +120,8 @@
                 aria-label="Instagram de Moffy Sports"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
                 aria-label="Facebook de Moffy Sports"><i class="fa-brands fa-square-facebook"></i></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter de Moffy Sports"><i
-                    class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter de Moffy Sports"><i class="fa-brands fa-square-x-twitter"></i></a>
         </div>
     </footer>
 </body>
