@@ -1,94 +1,205 @@
 
-
-.content-detalle
-{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  gap: 16px;
+*{
+   margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.content-detalle{
+    width: 100%;
 }
 
 .img-detalle{
-  display: grid;
-  justify-content:flex-end;
-}
-
-@media(max-width:975px){
-  .img-detalle{
-    justify-content:center;
-  }
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .img-detalle img{
-  height: 600px;
-  border-radius: 15px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.zapatillas-colores{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.zapatillas-colores img{
   box-sizing: border-box;
-  margin: 20px;
+    width: 25%;
+    margin: 5px;
+    border-radius: 3px ;
 }
 
 .detalle{
   box-sizing: border-box;
-  align-self: flex-start;
-  padding: 16px;
+  width: 100%;
 }
 
-.detalle button{
-    border-radius: 15px;
-    border: 1px solid black;
-    padding: 5px 10px;
-    margin-right: 5px;
+.detalle h1{
+  font-size: 25px;
+  margin-left: 15px;
+}
 
-    &:hover{
-      background-color: rgba(255, 255, 255, 0.5);
-      color: blanchedalmond;
-    }
+.detalle p{
+  margin-left: 15px;
+  margin-top:10px;
 }
 
 
-
-.zapatillas-colores{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  margin:0 auto;
+.button{
+  width:90%;
+  display: flex;
+  margin: 10px;
 }
 
-.zapatillas-colores img{
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
+.button button {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  margin:5px;
+
+  &:hover{
+    background-color: #FF006B;
+    color:white
+  }
+}
+
+
+
+.button-carrito{
+  box-sizing: border-box;
+  border-radius: 8px;
+  border:none;
+  padding:5px;
+  margin:15px;
+}
+
+.button-carrito:hover{
+  background-color: #FF006B;
+  color:white
 }
 
 .container-descripcion{
-    padding-left:20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.container-sugerencias{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  margin-left: 16px;
-  margin-right: 16px; 
+.container-descripcion h3{
+  margin: 15px;
 }
 
+.container-descripcion p{
+  margin: 15px;
+}
 
 .sugerencias h3{
-    margin-top: 40px;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    margin-left: 16px;
+  margin: 15px;
+}
+
+.img-sugerencias{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-sugerencias img{
+  width: 30%;
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 780px) {
+  .content-detalle{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+
+  }
+  .img-detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+  }
+  .zapatillas-colores{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .img-sugerencias{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .container-sugerencias img{
-    width:100%;
+  .img-sugerencias img{
+    max-width: 20%;
+    height: 200px;
+    margin: 10px;
     border-radius: 10px;
-    height: 300px;
   }
+}
 
-  @media (min-width: 340px) {
-    .img-detalle{
-      width: 100%;
+
+
+@media(min-width:1200px){
+    .img-detalle img{
+      width: 50%;
+      border-radius: 10px;
+    }
+   .zapatillas-colores{
+    width: 50%;
+   }
+   .zapatillas-colores img{
+      box-sizing: border-box;
+      width: 20%;
+      margin: 5px;
+      border-radius: 3px ;
+      &:hover{
+        width: 100px;
+         height: 100px;
+        transition: width 0s;
+      }
+    }
+
+    
+
+    .detalle h1{
+      font-size: 35px;
+      margin-left: 15px;
+    }
+    
+    .detalle p{
+      margin-left: 15px;
+      margin-top:10px;
+      font-size: 20px;
+    }
+  
+    .img-sugerencias img{
+      max-width: 15%;
+      height: 250px;
+      margin: 10px;
+      border-radius: 10px;
     }
 }
 
