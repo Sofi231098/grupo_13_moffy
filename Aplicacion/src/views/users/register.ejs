@@ -21,33 +21,7 @@
 </head>
 
 <body>
-    <header class="header">
-        <figure class="header__logo">
-            <img class="logo__img" src="/images/moffysports.jpg" alt="Logo Moffy Sports">
-            <a href="/home">
-                <h1 class="header__marca">MOFFY SPORTS</h1>
-            </a>
-        </figure>
-        <nav class="header__navbar">
-            <a class="navbar__enlace" href="/productos">Todas</a>
-            <a class="navbar__enlace" href="/productos/adidas">Adidas</a>
-            <a class="navbar__enlace" href="/productos/nike">Nike</a>
-            <a class="navbar__enlace" href="/productos/pumas">Pumas</a>
-        </nav>
-        <div class="header__buttons">
-            <a href="/carrito" class="header__icon">
-                <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-            <a href="/login" class="header__icon">
-                <i class="fa-solid fa-user"></i>
-            </a>
-        </div>
-        <div class="header__burgerButton">
-            <button class="burgerButton" aria-label="Desplegar Menú">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-    </header>
+    <%- include('../partials/header') %>
     <main class="mainRegistro">
         <section class="contenedorFormulario">
             <h2 class="formulario__titulo">BIENVENIDO A MOFFY SPORTS</h2>
@@ -73,23 +47,7 @@
             <p>¿Ya tenés cuenta? <a href="/login" class="formEnlace">Iniciar Sesión</a></p>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-logo">
-            <figure class="header__logo">
-                <img class="logo__img" src="/images/moffysports.jpg" alt="Logo Moffy Sports">
-                <h1 class="header__marca">MOFFY SPORTS</h1>
-            </figure>
-        </div>
-        <p>Desarrollado con amor por M&S</p>
-        <div class="footer__redes">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                aria-label="Instagram de Moffy Sports"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                aria-label="Facebook de Moffy Sports"><i class="fa-brands fa-square-facebook"></i></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                aria-label="Twitter de Moffy Sports"><i class="fa-brands fa-square-x-twitter"></i></a>
-        </div>
-    </footer>
+    <%- include('../partials/footer') %>
 </body>
 
 </html>
