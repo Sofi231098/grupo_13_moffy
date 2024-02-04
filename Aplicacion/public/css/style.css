@@ -20,7 +20,7 @@ body {
     align-items: center;
     gap: 10px;
 
-    & > a{
+    &>a {
         text-decoration: none;
         color: #fff;
     }
@@ -51,7 +51,7 @@ body {
     }
 }
 
-.navbar__enlace + .navbar__enlace {
+.navbar__enlace+.navbar__enlace {
     margin-left: 10px;
 }
 
@@ -62,7 +62,7 @@ body {
     gap: 10px;
 }
 
-.header__icon{
+.header__icon {
     display: block;
     height: 40px;
     width: 40px;
@@ -72,7 +72,7 @@ body {
     cursor: pointer;
     text-align: center;
 
-    & > i{
+    &>i {
         height: 100%;
         display: flex;
         align-items: center;
@@ -88,11 +88,11 @@ body {
     }
 }
 
-.header__burgerButton{
+.header__burgerButton {
     display: none;
 }
 
-.burgerButton{
+.burgerButton {
     height: 40px;
     width: 40px;
     background: #111;
@@ -100,22 +100,22 @@ body {
     border: none;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         color: rgba(255, 255, 255, 0.50);
     }
 }
 
 @media (width < 640px) {
 
-    .header__navbar{
+    .header__navbar {
         display: none;
     }
 
-    .header__buttons{
+    .header__buttons {
         display: none;
     }
 
-    .header__burgerButton{
+    .header__burgerButton {
         display: block;
         flex-grow: 1;
         text-align: end;
@@ -123,56 +123,60 @@ body {
 }
 
 /*footer*/
-.footer{
+.footer {
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 @media (width < 640px) {
-    .footer{
-        grid-template-columns: 1fr; 
+    .footer {
+        grid-template-columns: 1fr;
         justify-items: center;
     }
 }
 
 
-.footer p{
+.footer p {
     display: grid;
     justify-items: center;
 }
 
 
-.footer__redes{  
-    display:grid;
-    grid-template-columns: repeat(3,50px);
+.footer__redes {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
     justify-content: end;
 }
 
-.fa-instagram{
-    color:#833AB4 ;
+.fa-instagram {
+    color: #833AB4;
     font-size: 30px;
-    &:hover{
+
+    &:hover {
         color: #C13584;
     }
 }
 
-.fa-square-facebook{
+.fa-square-facebook {
     color: #3b5998;
     font-size: 30px;
-    &:hover{
+
+    &:hover {
         color: #6f9cf5;
     }
 }
-.fa-square-x-twitter{
+
+.fa-square-x-twitter {
     color: white;
     font-size: 30px;
-    &:hover{
+
+    &:hover {
         color: rgba(255, 255, 255, 0.50);
     }
 }
 
-.button--pink{
+.button--pink {
     padding: 5px;
     width: 100%;
 
@@ -183,15 +187,68 @@ body {
     cursor: pointer;
     font-size: 1rem;
 
-    &:hover{
+    &:hover {
         background-color: rgb(168, 0, 70, 0.9);
     }
 
-    &:active{
+    &:active {
         background-color: rgb(168, 0, 70, 0.95);
     }
 }
 
-.color--secondary{
+.color--secondary {
     color: #545454;
+}
+
+/* Formularios */
+
+form {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formLabel {
+    font-size: 0.8rem;
+}
+
+.formInput {
+    padding: 8px 0;
+    border: none;
+    color: #fff;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+
+    &:focus {
+        border-bottom: 2px solid #00F0FF;
+    }
+}
+
+.textArea{
+    padding: 8px 4px;
+    height: 100px;
+    resize: none;
+    border: none;
+    color: #fff;
+    background: rgb(255, 255, 255, 0.1);
+    outline: none;
+}
+
+.button--cyan {
+    padding-block: 8px;
+    width: 100%;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #00F0FF;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
 }

@@ -3,6 +3,6 @@ let express = require('express');
 let router = express.Router();
 let path = require('path');
 
-router.get('/home', mainController.index);
+router.get('/', mainController.index);
 
 module.exports = router;
