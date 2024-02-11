@@ -23,11 +23,13 @@
 }
 
 .zapatillas-colores{
+    margin-top: 16px;
     width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .zapatillas-colores img{
@@ -88,7 +90,9 @@
 }
 
 .container-descripcion{
+  margin-inline: auto;
   width: 100%;
+  max-width: 1120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,21 +112,22 @@
 }
 
 .img-sugerencias{
+  padding: 15px;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .img-sugerencias img{
-  width: 30%;
+  object-fit: cover;
   height: 150px;
-  margin: 10px;
   border-radius: 10px;
 }
-
 
 @media (min-width: 780px) {
   .content-detalle{
@@ -145,10 +150,12 @@
     align-items: center;
     margin-left: 10px;
   }
+
   .img-sugerencias{
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
@@ -175,10 +182,10 @@
       width: 20%;
       margin: 5px;
       border-radius: 3px ;
+      transition: all 150ms ease-out;
+
       &:hover{
-        width: 100px;
-         height: 100px;
-        transition: width 0s;
+        transform: scale(1.5);
       }
     }
 
