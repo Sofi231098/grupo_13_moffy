@@ -3,6 +3,6 @@ let express = require('express');
 let router = express.Router();
 let path = require('path');
 
-router.get('/carrito', productCartController.productCart);
+router.get('/', productCartController.productCart);
 
 module.exports = router;

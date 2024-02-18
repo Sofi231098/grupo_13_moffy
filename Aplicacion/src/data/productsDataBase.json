@@ -1,97 +1,283 @@
 [
-    {"id":1,
-    "name":"Adidas Campus",
-    "description":"Consigue un estilo retro y urbano con las zapatillas adidas Campus. Confeccionadas con ante suave y una suela duradera, son perfectas para un look casual con un toque clásico.",
-    "image":"https://i.pinimg.com/736x/fe/8b/e3/fe8be3da5bf24730367e046328787aea.jpg",
-    "category":"Adidas",
-    "colors":["negro","azul","blanco"],
-    "price":169000},
-
-    {"id":2,
-    "name":"Adidas Forum Low",
-    "description":"Dale un toque de estilo retro a tu look con las zapatillas adidas Forum Low. Con su diseño icónico de los años 80, estas zapatillas combinan comodidad y moda. Su parte superior de cuero premium y su suela de caucho te brindan durabilidad y tracción en cada paso. Ya sea para un día casual o para destacar en la calle, las adidas Forum Low son la elección perfecta para un estilo clásico y versátil.",
-    "image":"https://i.pinimg.com/564x/4f/b1/7d/4fb17d9f0a879e4c43337de8f0bd644d.jpg",
-    "category":"Adias",
-    "colors":["rojo","azul","verde","blanco"],
-    "price":145000},
-
-    {"id":3,
-    "name":"Adidas Hoops 3.0",
-    "description":"Domina la calle con estilo y comodidad con las zapatillas adidas Hoops 3.0. Diseñadas para el juego urbano, estas zapatillas ofrecen una combinación de rendimiento y moda. Con una parte superior resistente y una suela de agarre, te mantienen en movimiento con confianza en cada paso.",
-    "image":"https://i.pinimg.com/564x/99/44/c4/9944c42a97b70a367adc7d4239510d96.jpg",
-    "category":"Adidas",
-    "colors":["blanco"],
-    "price":139000},
-
-    {"id":4,
-    "name":"Nike Air Force 1",
-    "description":"Experimenta la leyenda con las Nike Air Force 1. Con su diseño icónico y su comodidad incomparable, estas zapatillas son un símbolo de estilo atemporal. La parte superior de cuero premium y la unidad Air-Sole ofrecen un ajuste duradero y amortiguado, perfecto para destacar en la calle con confianza y estilo.",
-    "image":"https://i.pinimg.com/564x/c2/78/bd/c278bd5fe5904952908d39609d813e48.jpg",
-    "category":"Nike",
-    "colors":["blanco","negro"],
-    "price":150000},
-
-    {"id":5,
-    "name":"Nike Dunk Low",
-    "description":"Destaca con estilo retro urbano con las Nike Dunk Low. Inspiradas en el baloncesto de los 80, estas zapatillas ofrecen un diseño clásico con un toque moderno. Con una parte superior de cuero premium y una suela duradera, las Dunk Low te brindan comodidad y estilo para cualquier ocasión.",
-    "image":"Nike Dunk Low",
-    "category":"Nike",
-    "colors":["verde","rosa","negro","rojo"],
-    "price":125000},
-
-    {"id":6,
-    "name":"Nike Blazer Mid '77",
-    "description":"Con las Nike Blazer Mid 77, añade un toque de estilo vintage a tu look urbano. Estas zapatillas combinan un diseño retro con detalles modernos para un estilo único. La parte superior de cuero premium y la suela de goma te ofrecen comodidad y tracción, mientras que el icónico Swoosh de Nike añade un toque de autenticidad a tu estilo.",
-    "image":"https://i.pinimg.com/564x/7f/9c/b8/7f9cb87cf3a3c947263cde020a92ea12.jpg",
-    "category":"Nike",
-    "colors":["blanco"],
-    "price":180000},
-
-    {"id":7,
-    "name":"Puma Mayze Swirl",
-    "description":"Desata tu estilo audaz con las Puma Mayze Swirl. Estas zapatillas fusionan la moda contemporánea con un toque de rebeldía. Con su diseño de plataforma y detalles swirl, destacarás en cualquier ocasión. La parte superior de cuero sintético y la suela de goma te ofrecen comodidad y tracción, mientras que el logo de Puma agrega un toque distintivo a tu estilo urbano.",
-    "image":"https://i.pinimg.com/564x/9b/30/55/9b3055bdf6dbcf57e1f1da28f43d7ebd.jpg",
-    "category":"Puma",
-    "colors":["fucsia","verde","celeste"],
-    "price":115000},
-
-    {"id":8,
-    "name":"Puma Shuffle",
-    "description":"Renueva tu estilo urbano con las Puma Shuffle. Estas zapatillas combinan comodidad y estilo en un diseño contemporáneo. Con su parte superior de tela transpirable y suela de goma resistente, te mantienen cómodo y con tracción en cada paso. Perfectas para destacar en la calle con un toque de frescura y modernidad.",
-    "image":"https://i.pinimg.com/564x/30/1d/37/301d37e831750529ef87194a4e6484bd.jpg",
-    "category":"Puma",
-    "colors":["blanco","negro"],
-    "price":127000},
-
-    {"id":9,
-    "name":"Puma 180",
-    "description":"Domina las calles con las Puma 180. Con una parte superior transpirable y una suela ligera, estas zapatillas ofrecen comodidad y estilo en cada paso. Perfectas para destacar en cualquier entorno urbano.",
-    "image":"https://i.pinimg.com/564x/15/80/5b/15805b27d99b44d7aba879124d53c730.jpg",
-    "category":"Puma",
-    "colors":["beige"],
-    "price":138000},
-
-    {"id":10,
-    "name":"Nike Air Jordan 1",
-    "description":"Experimenta la leyenda con las Nike Air Jordan 1. Con su diseño icónico y su legado en la cultura del calzado deportivo, estas zapatillas son una declaración de estilo audaz. La combinación de materiales premium y la unidad Air-Sole en el talón ofrecen comodidad y soporte, mientras que el diseño de alta calidad asegura un estilo inigualable en la calle.",
-    "image":"https://i.pinimg.com/564x/78/21/a2/7821a2647643f544692cb63f4e6678b6.jpg",
-    "category":"Nike",
-    "colors":["azul","rojo","negro"],
-    "price":190000},
-
-    {"id":11,
-    "name":"Nike M2K Tekno",
-    "description":"Desata tu estilo urbano con las Nike M2K Tekno. Inspiradas en el legado de las zapatillas de running, estas zapatillas combinan la moda contemporánea con detalles retro. Su parte superior de cuero y tela ofrece durabilidad y comodidad, mientras que la suela de goma te brinda tracción en cada paso. Perfectas para destacar en la calle con un toque de nostalgia y modernidad.",
-    "image":"https://i.pinimg.com/564x/c6/0d/c3/c60dc36673c18d8784a47bb21bc0d45e.jpg",
-    "category":"Nike",
-    "colors":["blanco"],
-    "price":145000},
-
-    {"id":12,
-    "name":"Nike Dunk High 1985",
-    "description":"Revive el legado con las Nike Dunk High 1985. Estas zapatillas capturan la esencia del estilo vintage con su diseño clásico y materiales de alta calidad. Con su parte superior de cuero premium y su suela de goma duradera, las Dunk High 1985 ofrecen comodidad y estilo atemporal en cada paso. Perfectas para los amantes de la moda retro que desean destacar en la calle con autenticidad y elegancia.",
-    "image":"https://i.pinimg.com/564x/4f/b1/7d/4fb17d9f0a879e4c43337de8f0bd644d.jpg",
-    "category":"Nike",
-    "colors":["rosa","verde","negro"],
-    "price":133000}
+  {
+    "id": 1,
+    "name": "Adidas Campus",
+    "description": "Consigue un estilo retro y urbano con las zapatillas adidas Campus. Confeccionadas con ante suave y una suela duradera, son perfectas para un look casual con un toque clásico.",
+    "image": "adidasCampus.jpg",
+    "category": "Adidas",
+    "colors": [
+      "negro",
+      "azul",
+      "blanco"
+    ],
+    "price": 169000,
+    "stock": 4,
+    "talles": [
+      "39",
+      "40",
+      "41"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Adidas Forum Low",
+    "description": "Dale un toque de estilo retro a tu look con las zapatillas adidas Forum Low. Con su diseño icónico de los años 80, estas zapatillas combinan comodidad y moda. Su parte superior de cuero premium y su suela de caucho te brindan durabilidad y tracción en cada paso. Ya sea para un día casual o para destacar en la calle, las adidas Forum Low son la elección perfecta para un estilo clásico y versátil.",
+    "image": "adidasForumLow.jpg",
+    "category": "Adidas",
+    "colors": [
+      "rojo",
+      "azul",
+      "verde",
+      "blanco"
+    ],
+    "price": 145000,
+    "stock": 3,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Adidas Hoops 3.0",
+    "description": "Domina la calle con estilo y comodidad con las zapatillas adidas Hoops 3.0. Diseñadas para el juego urbano, estas zapatillas ofrecen una combinación de rendimiento y moda. Con una parte superior resistente y una suela de agarre, te mantienen en movimiento con confianza en cada paso.",
+    "image": "adidasHoops.jpg",
+    "category": "Adidas",
+    "colors": [
+      "blanco"
+    ],
+    "price": 139000,
+    "stock": 0,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Nike Air Force 1",
+    "description": "Experimenta la leyenda con las Nike Air Force 1. Con su diseño icónico y su comodidad incomparable, estas zapatillas son un símbolo de estilo atemporal. La parte superior de cuero premium y la unidad Air-Sole ofrecen un ajuste duradero y amortiguado, perfecto para destacar en la calle con confianza y estilo.",
+    "image": "nikeAirForce1.jpg",
+    "category": "Nike",
+    "colors": [
+      "blanco",
+      "negro"
+    ],
+    "price": 150000,
+    "stock": 8,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Nike Dunk Low",
+    "description": "Destaca con estilo retro urbano con las Nike Dunk Low. Inspiradas en el baloncesto de los 80, estas zapatillas ofrecen un diseño clásico con un toque moderno. Con una parte superior de cuero premium y una suela duradera, las Dunk Low te brindan comodidad y estilo para cualquier ocasión.",
+    "image": "nikeDunkLow.jpg",
+    "category": "Nike",
+    "colors": [
+      "verde",
+      "rosa",
+      "negro",
+      "rojo"
+    ],
+    "price": 125000,
+    "stock": 6,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Nike Blazer Mid '77",
+    "description": "Con las Nike Blazer Mid 77, añade un toque de estilo vintage a tu look urbano. Estas zapatillas combinan un diseño retro con detalles modernos para un estilo único. La parte superior de cuero premium y la suela de goma te ofrecen comodidad y tracción, mientras que el icónico Swoosh de Nike añade un toque de autenticidad a tu estilo.",
+    "image": "nikeBlazerMid77.jpg",
+    "category": "Nike",
+    "colors": [
+      "blanco"
+    ],
+    "price": 180000,
+    "stock": 1,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Puma Mayze Swirl",
+    "description": "Desata tu estilo audaz con las Puma Mayze Swirl. Estas zapatillas fusionan la moda contemporánea con un toque de rebeldía. Con su diseño de plataforma y detalles swirl, destacarás en cualquier ocasión. La parte superior de cuero sintético y la suela de goma te ofrecen comodidad y tracción, mientras que el logo de Puma agrega un toque distintivo a tu estilo urbano.",
+    "image": "pumaMayzeSwirl.jpg",
+    "category": "Puma",
+    "colors": [
+      "fucsia",
+      "verde",
+      "celeste"
+    ],
+    "price": 115000,
+    "stock": 0,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Puma Shuffle",
+    "description": "Renueva tu estilo urbano con las Puma Shuffle. Estas zapatillas combinan comodidad y estilo en un diseño contemporáneo. Con su parte superior de tela transpirable y suela de goma resistente, te mantienen cómodo y con tracción en cada paso. Perfectas para destacar en la calle con un toque de frescura y modernidad.",
+    "image": "pumaShuffle.jpg",
+    "category": "Puma",
+    "colors": [
+      "blanco",
+      "negro"
+    ],
+    "price": 127000,
+    "stock": 4,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Puma 180",
+    "description": "Domina las calles con las Puma 180. Con una parte superior transpirable y una suela ligera, estas zapatillas ofrecen comodidad y estilo en cada paso. Perfectas para destacar en cualquier entorno urbano.",
+    "image": "puma180.jpg",
+    "category": "Puma",
+    "colors": [
+      "beige"
+    ],
+    "price": 138000,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Nike Air Jordan 1",
+    "description": "Experimenta la leyenda con las Nike Air Jordan 1. Con su diseño icónico y su legado en la cultura del calzado deportivo, estas zapatillas son una declaración de estilo audaz. La combinación de materiales premium y la unidad Air-Sole en el talón ofrecen comodidad y soporte, mientras que el diseño de alta calidad asegura un estilo inigualable en la calle.",
+    "image": "nikeAirJordan1.jpg",
+    "category": "Nike",
+    "colors": [
+      "azul",
+      "rojo",
+      "negro"
+    ],
+    "price": 190000,
+    "stock": 7,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Nike M2K Tekno",
+    "description": "Desata tu estilo urbano con las Nike M2K Tekno. Inspiradas en el legado de las zapatillas de running, estas zapatillas combinan la moda contemporánea con detalles retro. Su parte superior de cuero y tela ofrece durabilidad y comodidad, mientras que la suela de goma te brinda tracción en cada paso. Perfectas para destacar en la calle con un toque de nostalgia y modernidad.",
+    "image": "nikeM2KTekno.jpg",
+    "category": "Nike",
+    "colors": [
+      "blanco"
+    ],
+    "price": 145000,
+    "stock": 2,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Nike Dunk High 1985",
+    "description": "Revive el legado con las Nike Dunk High 1985. Estas zapatillas capturan la esencia del estilo vintage con su diseño clásico y materiales de alta calidad. Con su parte superior de cuero premium y su suela de goma duradera, las Dunk High 1985 ofrecen comodidad y estilo atemporal en cada paso. Perfectas para los amantes de la moda retro que desean destacar en la calle con autenticidad y elegancia.",
+    "image": "nikeDunkHigh1985.jpg",
+    "category": "Nike",
+    "colors": [
+      "rosa",
+      "verde",
+      "negro"
+    ],
+    "price": 133000,
+    "stock": 1,
+    "talles": [
+      "37",
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "name": "Messi y De Paul",
+    "category": "Probando",
+    "price": "12321321",
+    "stock": "1",
+    "talles": [
+      "37",
+      "38",
+      "39"
+    ],
+    "colors": [
+      "negro",
+      "azul"
+    ],
+    "description": "Lionel Messi y De Paul",
+    "id": "ee527ba1-a2f4-48f3-a4c4-4983e31f81cb",
+    "image": "1708222082000_img_.jpeg"
+  },
+  {
+    "name": "Messi, Neymar y Suarez",
+    "category": "sadsa",
+    "price": "123123",
+    "stock": "2",
+    "talles": [
+      "37",
+      "38"
+    ],
+    "colors": [
+      "negro",
+      "blanco",
+      "rojo"
+    ],
+    "description": "Ode to the mets",
+    "id": "57447902-4163-49cc-8283-a27d1e99fb45",
+    "image": "1708222271972_img_.jpg"
+  },
+  {
+    "name": "Goku",
+    "category": "321321",
+    "price": "213213213",
+    "stock": "5",
+    "talles": [
+      "38"
+    ],
+    "colors": [
+      "negro"
+    ],
+    "description": "321321",
+    "id": "d8706651-bb47-4ad0-8864-c1360ee55da2",
+    "image": "1708222355222_img_.png"
+  }
 ]

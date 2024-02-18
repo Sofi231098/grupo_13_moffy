@@ -26,7 +26,7 @@
         <section class="content-detalle">
 
           <div class="img-detalle">
-            <img src="https://i.pinimg.com/564x/d1/4b/2b/d14b2b0eebf76eca17622118105fdc0e.jpg" alt="Adidas Forum Low Azules" title="Adidas Forum Low Azules">
+            <img src="/images/products/<%= producto.image %>" alt="Adidas Forum Low Azules" title="Adidas Forum Low Azules">
             <div class="zapatillas-colores">
                 <img src="https://i.pinimg.com/474x/b5/fe/9b/b5fe9b5ce2a87871c254581b91d55ced.jpg" alt="Adidas Forum Low verdes" title="Adidas Forum Low verdes">
                 <img src="https://i.pinimg.com/474x/e5/5c/b6/e55cb636f03586a6c639b8685cc193cc.jpg" alt="Adidas Forum Low rojas" title="Adidas Forum Low rojas">
@@ -35,38 +35,35 @@
           </div>
 
           <section class="detalle">
-            <h1>Adidas Forum Low</h1>
-            <p>Precio: <strong>$1200000.00</strong></p>
-            <p>Marca: <strong>Adidas</strong></p>
+            <h1><%= producto.name %></h1>
+            <p>Precio: <strong>$<%= producto.price %></strong></p>
+            <p>Marca: <strong><%= producto.category %></strong></p>
             <p>Opciones</p>
             <div class="button">
-                <button>Talle 37</button>
-                <button>Talle 39</button>
-                <button>Talle 40</button>
-                <button>Talle 42</button>
+              <% producto.talles.map(talle => { %>
+                <button>Talle <%= talle %></button>
+              <% }) %>
             </div>
             <p>Color</p>
             <div class="button">
-                <button>Azul</button>
-                <button>Blanco</button>
-                <button>Rojo</button>
-                <button>Verde</button>
+              <% producto.colors.map(color => { %>
+                <button><%= color[0].toUpperCase() + color.substring(1) %></button>
+              <% }) %>
             </div>
-            
-            <p>Stock disponible</p>
+            <% if (producto.stock > 0) { %>
+              <p>Stock disponible</p>
+            <% } else { %>
+              <p>Producto sin stock</p>
+            <% } %>
             <button class="button-carrito">Anadir al carrito</button>
           </section>
         </section>
         <section class="container-descripcion">
           <article>
              <h3>Descripcion</h3>
-             <p>Zapatillas Adidas Forum Low: Estilo Icónico con Rendimiento Moderno.
-                Experimenta la fusión perfecta de nostalgia y vanguardia con las Adidas Forum Low.
-                Estas zapatillas destacan por su diseño retro-moderno que rinde homenaje a la icónica silueta Forum.
-                Fabricadas con materiales de alta calidad, ofrecen durabilidad excepcional para enfrentar el día a día con estilo y comodidad.
-                La amortiguación y el soporte óptimos las convierten en una elección versátil, ideal para cualquier ocasión.
-                Completa tu look con autenticidad gracias a los detalles Adidas Originals, incluyendo las emblemáticas tres rayas y el logo distintivo en la lengüeta.
-                ¡Eleva tu estilo con las Adidas Forum Low! | MoffySports</p>
+             <p>
+                <%= producto.description %>
+             </p>
           </article>
           <article>
             <h3>Opiniones</h3>

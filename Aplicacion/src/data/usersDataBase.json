@@ -1,27 +1,29 @@
 [
-    {"id":1,
-    "firstName":"Sofía",
-    "lastName":"Yáñez",
-    "email":"abrilyanez123@gmail.com",
-    "password":"123456",
-    "category":"admin",
-    "image":"dlfzkvmñk"
-    },
-    {"id":2,
-    "firstName":"Maximiliano",
-    "lastName":"Carrillo",
-    "email":"maximiliano01@gmail.com",
-    "password":"12345678",
-    "category":"admin",
-    "image":"{zpdfokáwe}"
+    {
+        "id": 1,
+        "firstName": "Sofía",
+        "lastName": "Yáñez",
+        "email": "abrilyanez123@gmail.com",
+        "password": "123456",
+        "category": "admin",
+        "image": "dlfzkvmñk"
     },
     {
-    "id":3,
-    "firstName":"Abril",
-    "lastName":"Yáñez",
-    "email":"abi02@gmail.com",
-    "password":"abi123",
-    "category":"admin",
-    "image":"aeñwlrwaéorkfeori"
+        "id": 2,
+        "firstName": "Maximiliano",
+        "lastName": "Carrillo",
+        "email": "maximiliano01@gmail.com",
+        "password": "12345678",
+        "category": "admin",
+        "image": "{zpdfokáwe}"
+    },
+    {
+        "id": 3,
+        "firstName": "Abril",
+        "lastName": "Yáñez",
+        "email": "abi02@gmail.com",
+        "password": "abi123",
+        "category": "admin",
+        "image": "aeñwlrwaéorkfeori"
     }
 ]

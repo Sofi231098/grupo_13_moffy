@@ -2,16 +2,18 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const router = express.Router();
+const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const rutasMain = require('./src/routes/main.js');
+const rutasProduct = require('./src/routes/product.js');
+const rutasProductCart = require('./src/routes/productCart.js');
 
-let rutasMain = require('./src/routes/main.js');
-let rutasLogin = require('./src/routes/login.js');
-let rutasRegister = require('./src/routes/register.js');
-let rutasProduct = require('./src/routes/product.js');
-let rutasProductDetail = require('./src/routes/productDetail.js');
-let rutasProductCart = require('./src/routes/productCart.js');
 
+
+// ************ Middlewares - (don't touch) ************
 app.use(express.static(path.resolve(__dirname, 'public')));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src/views'));
@@ -21,18 +23,5 @@ app.listen(3000, () => {
 });
 
 app.use('/', rutasMain);
-app.use('/', rutasLogin);
-app.use('/', rutasRegister);
-app.use('/', rutasProduct);
-app.use('/', rutasProductDetail);
-app.use('/', rutasProductCart);
-
-
-
-
-
-
-
-
-
-
+app.use('/products', rutasProduct);
+app.use('/carrito', rutasProductCart);

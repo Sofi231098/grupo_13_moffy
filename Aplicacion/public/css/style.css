@@ -150,11 +150,11 @@ body {
 }
 
 .fa-instagram {
-    color: #833AB4;
+    color: #C13584;
     font-size: 30px;
 
     &:hover {
-        color: #C13584;
+        color: #d8559f;
     }
 }
 
