@@ -1,4 +1,4 @@
-# Informe Diario - [29-01-24]
+# Informe Diario SPRINT 3 - [29-01-24]
 
 ## Resumen de Tareas Completadas
 - [MoofySport/Tarea 1]: Se actualizó el tablero de trabajo con nuevas tareas del sprint 3.
@@ -26,3 +26,26 @@
 
 ## Objetivos
 - Terminar las tareas programadas.
+
+# Informe Diario SPRINT 4 - [16-02-24]
+- [MoofySport/Tarea 1]: Se actualizó el tablero de trabajo con nuevas tareas del sprint 4.
+- [MoofySport/Tarea 2]: Definimos los campos para usuarios y productos en archivos JSON.
+
+## Impedimentos Encontrados y Soluciones Propuestas
+- [MoofySport/Tarea 1]: No hubo impedimentos.
+- [MoofySport/Tarea 2]: No hubo impedimentos.
+
+## Integrantes
+- Maximiliano Joaquín Carrillo
+- Sofia Trinidad Yáñez
+
+# Plan para Hoy - [16-02-24]
+## Tareas Programadas
+- [MoofySport/Tarea 1]: CRUD de productos. Implementar todos los métodos necesarios para poder trabajar con la fuente de datos JSON de productos.
+- [MoofySport/Tarea 1]: Realizar retrospectiva.
+- [MoofySport/Tarea 1]: Implementar daily/weekly.
+
+## Impedimentos Encontrados y Soluciones Propuestas
+- 
+-
+-
