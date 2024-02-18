@@ -19,4 +19,25 @@ Nos sentimos satisfechos y contentos, ya que este proceso nos brindó la oportun
 
 - **Comunicación**
 
+# CONCLUSIONES - SEGUNDO SPRINT 4 🎖️
+
+Uno de los sprint más complicados, ya que teníamos que pasar el diseño que habiamos realizado anteriormente al desarrollo local. Afortunadamente lo logramos, y el resultado bajo nuestro punto de vista es el esperado.
+
+Nos sentimos satisfechos y contentos, ya que este proceso nos brindó la oportunidad de aprender, centrándonos especialmente en el maquetado.
+
+## BUENO 📈
+
+- **Organización**: Una vez más, nos organizamos muy bien con las tareas,gracias al tablero de trabajo, cada uno pudo hacerlas sin ningún problema.
+- **Aprendizaje**: Para realizar el mejor trabajo posible, nos ayudamos explicandonos el tema que mas nos costaba.
+- **Responabilidad**: Otra cosa que destacamos es que cada uno fue responsable con las partes que nos tocó realizar, y no solo eso, si no que no tuvimos problemas en pedir ayuda uno del otro.
+- **Comunicación**: La comunicación mejoró, por ende, mejoró el trabajo.
+
+## MALO 📉
+
+-
+
+## PUNTOS A MEJORAR ✔
+
+- 
+
 ### Su buen amigo el equipo de Moffy Sports 🕸️
