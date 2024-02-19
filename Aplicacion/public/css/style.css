@@ -218,8 +218,14 @@ form {
     outline: none;
     border-bottom: 2px solid #fff;
 
-    &:focus {
-        border-bottom: 2px solid #00F0FF;
+    &:invalid{
+        border-bottom: 2px solid #ff0037;
+    }
+    &:valid{
+        border-bottom: 2px solid #00ff85;
+    }
+    &:focus{
+        border-bottom: 2px solid #fff;
     }
 }
 
@@ -251,4 +257,8 @@ form {
     &:active {
         opacity: 0.9;
     }
+}
+
+.labelRequired{
+    color: #ff0037;
 }

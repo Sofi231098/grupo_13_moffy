@@ -10,8 +10,8 @@
     <meta name="keywords" content="Moffy Sports, MoffySports, Moffy">
     <title>Moffy Sports</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,21 +23,17 @@
     <%- include('../partials/header') %>
     <main class="main-login">
       <section class="form-login">
-        <h1 class="login-titulo">BIENVENIDO A MOOFY SPORT</h1>
+        <h2 class="login-titulo">BIENVENIDO A MOFFY SPORTS</h2>
         <form>
-
             <div>
-                <label for="email" class="formLabel">Correo electrónico</label>
-                <input type="email" placeholder="max11carrillo@gmail.com" id="email" class="formInput">
+                <label for="email" class="formLabel">Correo electrónico <span class="labelRequired">*</span></label>
+                <input type="email" placeholder="max11carrillo@gmail.com" id="email" class="formInput" name="email" required>
             </div>
-
             <div>
-                <label for="password" class="formLabel">Contraseña</label>
-                <input type="password" placeholder="maxcarrillo123" id="password" class="formInput">
+                <label for="password" class="formLabel">Contraseña <span class="labelRequired">*</span></label>
+                <input type="password" placeholder="maxcarrillo123" id="password" class="formInput" name="password" required>
             </div>
-
             <button class="boton" type="submit">Iniciar Sesión</button>
-
         </form> 
         <p>¿No tenés cuenta? <a href="/registro" class="link-registro">Registrarme</a></p>
       </section>

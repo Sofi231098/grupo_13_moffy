@@ -27,19 +27,19 @@
                 <h2 class="form__titulo">REGISTRAR PRODUCTO</h2>
                 <form action="/products/" method="POST" enctype="multipart/form-data">
                     <div>
-                        <label for="productName" class="formLabel">Nombre del Producto</label>
+                        <label for="productName" class="formLabel">Nombre del Producto <span class="labelRequired">*</span></label>
                         <input type="text" id="productName" placeholder="Adidas Low" class="formInput" name="name" required/>
                     </div>
                     <div>
-                        <label for="productBrand" class="formLabel">Marca</label>
+                        <label for="productBrand" class="formLabel">Marca <span class="labelRequired">*</span></label>
                         <input type="text" id="productBrand" placeholder="Adidas" class="formInput" name="category" required/>
                     </div>
                     <div>
-                        <label for="productPrice" class="formLabel">Precio</label>
+                        <label for="productPrice" class="formLabel">Precio <span class="labelRequired">*</span></label>
                         <input type="number" id="productPrice" placeholder="59000" min="20000" class="formInput" name="price" required/>
                     </div>
                     <div>
-                        <label for="productStock" class="formLabel">Stock</label>
+                        <label for="productStock" class="formLabel">Stock <span class="labelRequired">*</span></label>
                         <input type="number" id="productStock" placeholder="2" min="0" class="formInput" name="stock" required/>
                     </div>
                     <label for="productDescription" class="formLabel">Talles Disponibles</label>
@@ -54,7 +54,7 @@
                             <% } %>
                     </div>
                     <div>
-                        <label for="productColors" class="formLabel">Colores</label>
+                        <label for="productColors" class="formLabel">Colores <span class="labelRequired">*</span></label>
                         <select id="productColors" name="colors" multiple required>
                             <option value="negro">Negro</option>
                             <option value="azul">Azul</option>
@@ -68,11 +68,11 @@
                         </select>
                     </div>
                     <div>
-                        <label for="productImage" class="formLabel">Imagen</label>
+                        <label for="productImage" class="formLabel">Imagen <span class="labelRequired">*</span></label>
                         <input type="file" id="productImage" accept="image/*" class="formInput" name="image" required/>
                     </div>
                     <div>
-                        <label for="productDescription" class="formLabel">Descripción</label>
+                        <label for="productDescription" class="formLabel">Descripción <span class="labelRequired">*</span></label>
                         <textarea id="productDescription" placeholder="Ingrese la descripción del producto..." class="textArea" name="description" required></textarea>
                     </div>
                     <button class="button--cyan" type="submit">Registrar</button>

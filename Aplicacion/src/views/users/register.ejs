@@ -27,20 +27,20 @@
             <h2 class="formulario__titulo">BIENVENIDO A MOFFY SPORTS</h2>
             <form>
                 <div>
-                    <label for="email" class="formLabel">Correo Electrónico</label>
-                    <input type="email" id="email" placeholder="abrilyanez123@gmail.com" class="formInput" />
+                    <label for="email" class="formLabel">Correo Electrónico <span class="labelRequired">*</span></label>
+                    <input type="email" id="email" placeholder="abrilyanez123@gmail.com" class="formInput" name="email" required/>
                 </div>
                 <div>
-                    <label for="user" class="formLabel">Usuario</label>
-                    <input type="text" id="user" placeholder="sofiyañez123" class="formInput" />
+                    <label for="user" class="formLabel">Usuario <span class="labelRequired">*</span></label>
+                    <input type="text" id="user" placeholder="sofiyañez123" class="formInput" name="usuario" required/>
                 </div>
                 <div>
-                    <label for="password" class="formLabel">Contraseña</label>
-                    <input type="password" id="password" placeholder="•••••••••••" class="formInput" />
+                    <label for="password" class="formLabel">Contraseña <span class="labelRequired">*</span></label>
+                    <input type="password" id="password" placeholder="•••••••••••" class="formInput" name="password" required/>
                 </div>
                 <div>
-                    <label for="repassword" class="formLabel">Repetir Contraseña</label>
-                    <input type="password" id="repassword" placeholder="•••••••••••" class="formInput" />
+                    <label for="repassword" class="formLabel">Repetir Contraseña <span class="labelRequired">*</span></label>
+                    <input type="password" id="repassword" placeholder="•••••••••••" class="formInput" name="repeatPassword" required/>
                 </div>
                 <button class="button--cyan" type="submit">Registrarme</button>
             </form>

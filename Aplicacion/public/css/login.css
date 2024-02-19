@@ -1,20 +1,23 @@
 
 /*login*/
 .main-login{
+    padding: 10px;
     display:grid;
-    justify-content: center;
+    Justify-items: center;
+    align-items: center;
 }
 
 .form-login{
     box-sizing: border-box;
     width:100%;
     max-width: 500px;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     background: linear-gradient(to bottom, rgb(0, 0, 0, 0.25) 0%, #111 100%);
 }
 
 .login-titulo{
+    margin-bottom: 28px;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -27,14 +30,13 @@ form {
 
 form div{
    display:grid;
+   margin-bottom: 20px;
 }
 
 .formLabel{
     font-size: 0.8rem;
     color: #00ff85;
-    margin-top: 16px;
 }
-
 
 .formInput{
     padding: 8px 0;
@@ -44,8 +46,14 @@ form div{
     outline: none;
     border-bottom: 2px solid #fff;
 
-    &:focus {
+    &:valid{
         border-bottom: 2px solid #00ff85;
+    }
+    &:invalid{
+        border-bottom: 2px solid #ff0037;
+    }
+    &:focus{
+        border-bottom: 2px solid #fff;
     }
 }
 
