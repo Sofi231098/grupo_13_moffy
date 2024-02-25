@@ -232,7 +232,7 @@
   {
     "name": "Messi y De Paul",
     "category": "Probando",
-    "price": "12321321",
+    "price": 12321321,
     "stock": "1",
     "talles": [
       "37",
@@ -250,7 +250,7 @@
   {
     "name": "Messi, Neymar y Suarez",
     "category": "sadsa",
-    "price": "123123",
+    "price": 123123,
     "stock": "2",
     "talles": [
       "37",
@@ -268,7 +268,7 @@
   {
     "name": "Goku",
     "category": "321321",
-    "price": "213213213",
+    "price": 80000,
     "stock": "5",
     "talles": [
       "38"

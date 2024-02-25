@@ -219,18 +219,20 @@ form {
     outline: none;
     border-bottom: 2px solid #fff;
 
-    &:invalid{
+    &:invalid {
         border-bottom: 2px solid #ff0037;
     }
-    &:valid{
+
+    &:valid {
         border-bottom: 2px solid #00ff85;
     }
-    &:focus{
+
+    &:focus {
         border-bottom: 2px solid #fff;
     }
 }
 
-.textArea{
+.textArea {
     padding: 8px 4px;
     height: 100px;
     resize: none;
@@ -260,6 +262,32 @@ form {
     }
 }
 
-.labelRequired{
+.button--white {
+    padding-block: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        opacity: 0.95;
+    }
+}
+
+.formSelect {
+    padding: 2px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+
+.labelRequired {
     color: #ff0037;
 }

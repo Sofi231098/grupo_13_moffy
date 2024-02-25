@@ -23,46 +23,51 @@
 <body>
     <%- include('../partials/header') %>
     <main class="mainProducts">
-        <section class="search-order">
-            <div class="search">
-                <label for="site-search">Buscar:</label>
-                <input type="search" id="site-search" name="search" />
-            </div>
-            <div class="order">
-                <label for="ice-cream-choice">Ordenar por:</label>
-                <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-                <datalist id="ice-cream-flavors">
-                    <option value="Mayor precio"></option>
-                    <option value="Menor precio"></option>
-                    <option value="Mujer"></option>
-                    <option value="Hombre"></option>
-                    <option value="Nuevos ingresos"></option>
-                </datalist>
-            </div>
-        </section>
         <section class="producto-container">
             <article class="categoria">
-                <h3>Categoria</h3>
-                <ul>
-                    <li>Todo</li>
-                    <li>Hombre</li>
-                    <li>Mujer</li>
-                    <li>Unisex</li>
-                    <li>Ninos</li>
-                </ul>
+                <form>
+                    <div>
+                        <label for="name" class="formLabel">Buscar producto</label>
+                        <input class="formInput" type="text" id="name" name="name" placeholder="Nombre del producto" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="category" class="formLabel">Marca</label>
+                        <input class="formInput" type="text" id="category" name="category" placeholder="Marca del producto" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="precioMax" class="formLabel">Precio máximo</label>
+                        <input class="formInput" type="number" id="precioMax" name="precioMax" min="0" placeholder="Precio máximo" >
+                    </div>
+                    <div>
+                        <label for="ordenar" class="formLabel">Ordenar por</label>
+                        <select id="ordenar" name="ordenar" class="formSelect">
+                            <option value="" selected>Defecto</option>
+                            <option value="Menor precio">Menor precio</option>
+                            <option value="Mayor precio">Mayor precio</option>
+                            <option value="Nuevos ingresos">Nuevos ingresos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="button--white ">Buscar</button>
+                    </div>
+                </form>
             </article>
-            <article class="img-productos">
-                <% products.map(producto => { %>
-                    <a href="/products/<%= producto.id %>">
-                        <figure class="img__figure">
-                            <img src="/images/products/<%= producto.image %>"
-                                alt="<%= producto.name %>" title="<%= producto.name %>">
-                            <figcaption><%= producto.name %></figcaption>
-                            <p>$<%= producto.price %></p>
-                        </figure>
-                    </a>
-                <% }) %>
-            </article>
+            <% if(products.length === 0) { %>
+                <h2 class="productsNotFound">No se encontraron productos</h2>
+            <% } else { %>
+                <article class="img-productos">
+                    <% products.map(producto => { %>
+                        <a href="/products/<%= producto.id %>">
+                            <figure class="img__figure">
+                                <img src="/images/products/<%= producto.image %>"
+                                    alt="<%= producto.name %>" title="<%= producto.name %>">
+                                <figcaption><%= producto.name %></figcaption>
+                                <p>$<%= producto.price %></p>
+                            </figure>
+                        </a>
+                    <% }) %>
+                </article>
+            <% } %>
         </section>
     </main>
     <%- include('../partials/footer') %>
