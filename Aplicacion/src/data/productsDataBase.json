@@ -122,12 +122,12 @@
     "image": "pumaMayzeSwirl.jpg",
     "category": "Puma",
     "colors": [
-      "fucsia",
       "verde",
+      "fucsia",
       "celeste"
     ],
     "price": 115000,
-    "stock": 0,
+    "stock": "8",
     "talles": [
       "37",
       "39",
@@ -276,8 +276,26 @@
     "colors": [
       "negro"
     ],
-    "description": "321321",
+    "description": "321321545454",
     "id": "d8706651-bb47-4ad0-8864-c1360ee55da2",
-    "image": "1708222355222_img_.png"
+    "image": "1708987927150_img_.jpeg"
+  },
+  {
+    "name": "adidas jiji",
+    "category": "adidas",
+    "price": 35000,
+    "stock": "9",
+    "talles": [
+      "37"
+    ],
+    "colors": [
+      "negro",
+      "azul",
+      "blanco",
+      "rojo"
+    ],
+    "description": "fdahfkhjgl",
+    "id": "5f4ec2c9-a12c-4efc-86c3-4b61c9ab8d00",
+    "image": "1708988289155_img_.jpeg"
   }
 ]

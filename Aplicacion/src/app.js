@@ -8,7 +8,6 @@ const rutasProduct = require('./routes/product.js');
 const rutasProductCart = require('./routes/productCart.js');
 
 
-
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(express.urlencoded({ extended: false }));

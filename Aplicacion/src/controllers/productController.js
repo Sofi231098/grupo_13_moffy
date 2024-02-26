@@ -1,4 +1,5 @@
 const path = require('path');
+const crypto = require('crypto');
 const fs = require('fs');
 const products = require('../data/productsDataBase.json');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
@@ -52,7 +53,7 @@ const productController = {
         newProduct.price = Number(newProduct.price);
         products.push(newProduct);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-        res.send(newProduct);
+        return res.redirect('/products');
     },
     productEdit: (req, res) => {
         const { id } = req.params;
