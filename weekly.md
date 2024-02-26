@@ -46,6 +46,6 @@
 - [MoofySport/Tarea 1]: Implementar daily/weekly.
 
 ## Impedimentos Encontrados y Soluciones Propuestas
-- 
--
--
+- [MoofySport/Tarea 1]: No hubo impedimentos, si bien fue complejo se resolvio de manera correcta.
+- [MoofySport/Tarea 2]: No hubo impedimentos.
+- [MoofySport/Tarea 2]: No hubo impedimentos.
