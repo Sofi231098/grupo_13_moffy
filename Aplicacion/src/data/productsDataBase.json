@@ -266,21 +266,6 @@
     "image": "1708222271972_img_.jpg"
   },
   {
-    "name": "Goku",
-    "category": "321321",
-    "price": 80000,
-    "stock": "5",
-    "talles": [
-      "38"
-    ],
-    "colors": [
-      "negro"
-    ],
-    "description": "321321545454",
-    "id": "d8706651-bb47-4ad0-8864-c1360ee55da2",
-    "image": "1708987927150_img_.jpeg"
-  },
-  {
     "name": "adidas jiji",
     "category": "adidas",
     "price": 35000,

@@ -55,7 +55,9 @@
             <% } else { %>
               <p>Producto sin stock</p>
             <% } %>
-            <button class="button-carrito">Anadir al carrito</button>
+            <form action="/products/<%=producto.id %>?_method=DELETE" method="post">
+              <button class="button-carrito" type="submit">Anadir al carrito</button>
+            </form>
           </section>
         </section>
         <section class="container-descripcion">
