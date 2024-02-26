@@ -25,18 +25,22 @@
         <main class="mainProductForm">
             <section class="sectionProductForm">
                 <h2 class="form__titulo">REGISTRAR PRODUCTO</h2>
-                <form>
+                <form action="/products/" method="POST" enctype="multipart/form-data">
                     <div>
-                        <label for="productName" class="formLabel">Nombre del Producto</label>
-                        <input type="text" id="productName" placeholder="Adidas Low" class="formInput" required/>
+                        <label for="productName" class="formLabel">Nombre del Producto <span class="labelRequired">*</span></label>
+                        <input type="text" id="productName" placeholder="Adidas Low" class="formInput" name="name" required/>
                     </div>
                     <div>
-                        <label for="productBrand" class="formLabel">Marca</label>
-                        <input type="text" id="productBrand" placeholder="Adidas" class="formInput" required/>
+                        <label for="productBrand" class="formLabel">Marca <span class="labelRequired">*</span></label>
+                        <input type="text" id="productBrand" placeholder="Adidas" class="formInput" name="category" required/>
                     </div>
                     <div>
-                        <label for="productPrice" class="formLabel">Precio</label>
-                        <input type="number" id="productPrice" placeholder="59000" min="20000" class="formInput" required/>
+                        <label for="productPrice" class="formLabel">Precio <span class="labelRequired">*</span></label>
+                        <input type="number" id="productPrice" placeholder="59000" min="20000" class="formInput" name="price" required/>
+                    </div>
+                    <div>
+                        <label for="productStock" class="formLabel">Stock <span class="labelRequired">*</span></label>
+                        <input type="number" id="productStock" placeholder="2" min="0" class="formInput" name="stock" required/>
                     </div>
                     <label for="productDescription" class="formLabel">Talles Disponibles</label>
                     <div class="formCheckboxContainer">
@@ -45,23 +49,37 @@
                                 <label>
                                     <%= i %>
                                 </label>
-                                <input type="checkbox" value="<%= i %>" name="formTalles"/>
+                                <input type="checkbox" value="<%= i %>" name="talles"/>
                             </div>
                             <% } %>
                     </div>
                     <div>
-                        <label for="productImage" class="formLabel">Imagen</label>
-                        <input type="file" id="productImage" accept="image/*" class="formInput" required/>
+                        <label for="productColors" class="formLabel">Colores <span class="labelRequired">*</span></label>
+                        <select id="productColors" name="colors" multiple required>
+                            <option value="negro">Negro</option>
+                            <option value="azul">Azul</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="verde">Verde</option>
+                            <option value="rosa">Rosa</option>
+                            <option value="fucsia">Fucsia</option>
+                            <option value="celeste">Celeste</option>
+                            <option value="beige">Beige</option>
+                        </select>
                     </div>
                     <div>
-                        <label for="productDescription" class="formLabel">Descripción</label>
-                        <textarea id="productDescription" placeholder="Ingrese la descripción del producto..." class="textArea" required></textarea>
+                        <label for="productImage" class="formLabel">Imagen <span class="labelRequired">*</span></label>
+                        <input type="file" id="productImage" accept="image/*" class="formInput" name="image" required/>
+                    </div>
+                    <div>
+                        <label for="productDescription" class="formLabel">Descripción <span class="labelRequired">*</span></label>
+                        <textarea id="productDescription" placeholder="Ingrese la descripción del producto..." class="textArea" name="description" required></textarea>
                     </div>
                     <button class="button--cyan" type="submit">Registrar</button>
                 </form>
             </section>
         </main>
+        <%- include('../partials/footer') %>
 </body>
-<%- include('../partials/footer') %>
 
 </html>
