@@ -25,7 +25,15 @@
     <main class="mainRegistro">
         <section class="contenedorFormulario">
             <h2 class="formulario__titulo">BIENVENIDO A MOFFY SPORTS</h2>
-            <form>
+            <form action="/registro" method="POST">
+                <div>
+                    <label for="name" class="formLabel">Nombre</label>
+                    <input type="text" id="name" placeholder="Sofia Trinidad" class="formInput" name="firstName"/>
+                </div>
+                <div>
+                    <label for="lastName" class="formLabel">Apellido</label>
+                    <input type="text" id="lastName" placeholder="Yañez" class="formInput" name="lastName"/>
+                </div>
                 <div>
                     <label for="email" class="formLabel">Correo Electrónico <span class="labelRequired">*</span></label>
                     <input type="email" id="email" placeholder="abrilyanez123@gmail.com" class="formInput" name="email" required/>

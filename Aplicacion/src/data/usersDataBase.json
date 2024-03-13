@@ -1,29 +1,30 @@
 [
-    {
-        "id": 1,
-        "firstName": "Sofía",
-        "lastName": "Yáñez",
-        "email": "abrilyanez123@gmail.com",
-        "password": "123456",
-        "category": "admin",
-        "image": "dlfzkvmñk"
-    },
-    {
-        "id": 2,
-        "firstName": "Maximiliano",
-        "lastName": "Carrillo",
-        "email": "maximiliano01@gmail.com",
-        "password": "12345678",
-        "category": "admin",
-        "image": "{zpdfokáwe}"
-    },
-    {
-        "id": 3,
-        "firstName": "Abril",
-        "lastName": "Yáñez",
-        "email": "abi02@gmail.com",
-        "password": "abi123",
-        "category": "admin",
-        "image": "aeñwlrwaéorkfeori"
-    }
+  {
+    "id": 1,
+    "usuario": "sofiayanez",
+    "firstName": "Sofía",
+    "lastName": "Yáñez",
+    "email": "abrilyanez123@gmail.com",
+    "password": "12345678",
+    "category": "admin",
+    "image": "default.jpg"
+  },
+  {
+    "firstName": "Sofía",
+    "lastName": "Yáñez",
+    "email": "abrilyanez123@gmail.com",
+    "password": "123456789",
+    "id": "bdf7d080-115f-4e97-b62f-8fcd3d12287d",
+    "image": "default.jpg",
+    "category": "user"
+  },
+  {
+    "id": "9202ee2d-97ee-47fc-b474-826e73d76b8f",
+    "firstName": "Maximiliano Joaquin",
+    "lastName": "Carrillo",
+    "email": "nicojny96@gmail.com",
+    "password": "$2a$10$6BKIRqOttiXfE3RrKqYJ8uYYu25AfNBBLldCAw.aKybusINRwKm.a",
+    "category": "user",
+    "image": "default.jpg"
+  }
 ]
