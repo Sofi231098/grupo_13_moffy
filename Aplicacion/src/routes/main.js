@@ -3,6 +3,8 @@ const mainController = require('../controllers/mainController');
 let express = require('express');
 let router = express.Router();
 let path = require('path');
+let multer = require('multer');
+const auth = require('../middlewares/auth');
 
 let validateUser = [
     check('email')
@@ -35,5 +37,6 @@ router.get('/login', mainController.login);
 router.post('/login', validateUserLogin, mainController.processLogin);
 router.get('/registro', mainController.register);
 router.post('/registro', validateUser, mainController.storeUser);
+router.get('/logout', mainController.logout);
 
 module.exports = router;

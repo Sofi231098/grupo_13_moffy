@@ -46,15 +46,21 @@ const mainController = {
             const user = usuarios.find(user => user.email === email);
             if(user){
                 if(bcrypt.compareSync(password, user.password)){
-                    delete user.password;
                     req.session.user = user;
-
+                    if(req.body.remember){
+                        res.cookie('userEmail', email, {maxAge: 1000 * 60 * 60 * 24 * 30});
+                    }
                     return res.redirect('/');
                 }
             
             }
         }
     },
+    logout: (req, res) => {
+        req.session.destroy();
+        res.clearCookie('userEmail');
+        return res.redirect('/');
+    }
 };
 
 module.exports = mainController;
