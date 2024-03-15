@@ -46,12 +46,6 @@ form div {
     &:valid{
         border-bottom: 2px solid #00ff85;
     }
-    &:invalid{
-        border-bottom: 2px solid #ff0037;
-    }
-    &:focus{
-        border-bottom: 2px solid #fff;
-    }
 }
 
 .contenedorFormulario p {

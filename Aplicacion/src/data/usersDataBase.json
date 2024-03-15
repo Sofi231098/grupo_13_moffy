@@ -20,11 +20,20 @@
   },
   {
     "id": "9202ee2d-97ee-47fc-b474-826e73d76b8f",
-    "firstName": "Maximiliano Joaquin",
-    "lastName": "Carrillo",
+    "firstName": "Nicolas",
+    "lastName": "Yañez",
     "email": "nicojny96@gmail.com",
     "password": "$2a$10$6BKIRqOttiXfE3RrKqYJ8uYYu25AfNBBLldCAw.aKybusINRwKm.a",
     "category": "user",
     "image": "default.jpg"
+  },
+  {
+    "id": "09e6107c-8b49-4e16-a996-9ac2e639b58b",
+    "firstName": "Maximiliano",
+    "lastName": "Carrillo",
+    "email": "maxi11carrillo@gmail.com",
+    "password": "$2a$10$nl9DAlE2vEmQOibETyr3cu5AuYy1K0KMgO8mf0wBqIh4.QJ98GfZ2",
+    "category": "user",
+    "image": "1710509702003_img_.jpg"
   }
 ]

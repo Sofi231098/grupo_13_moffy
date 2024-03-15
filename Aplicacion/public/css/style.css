@@ -231,16 +231,12 @@ form {
     outline: none;
     border-bottom: 2px solid #fff;
 
-    &:invalid {
-        border-bottom: 2px solid #ff0037;
-    }
-
     &:valid {
         border-bottom: 2px solid #00ff85;
     }
-
-    &:focus {
-        border-bottom: 2px solid #fff;
+    &:-webkit-autofill {
+        -webkit-text-fill-color: #fff;
+        -webkit-box-shadow: 0 0 0px 1000px #111 inset;
     }
 }
 
@@ -301,5 +297,10 @@ form {
 }
 
 .labelRequired {
+    color: #ff0037;
+}
+
+.label--error{
+    margin-top: 4px;
     color: #ff0037;
 }

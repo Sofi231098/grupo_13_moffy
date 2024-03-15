@@ -1,6 +1,6 @@
 const users = require('../data/usersDataBase.json');
 
-const verifyRememberAuth = (req, res, next) => {
+const UserLoggedMiddleware = (req, res, next) => {
     res.locals.isLogged = false; 
     let userEmail = req.cookies.userEmail;
     let user = users.find(user => user.email === userEmail);
@@ -14,4 +14,4 @@ const verifyRememberAuth = (req, res, next) => {
     next();
 }
 
-module.exports = verifyRememberAuth;
+module.exports = UserLoggedMiddleware;

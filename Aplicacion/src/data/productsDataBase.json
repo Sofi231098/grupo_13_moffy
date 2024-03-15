@@ -228,59 +228,5 @@
       "40",
       "42"
     ]
-  },
-  {
-    "name": "Messi y De Paul",
-    "category": "Probando",
-    "price": 12321321,
-    "stock": "1",
-    "talles": [
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "negro",
-      "azul"
-    ],
-    "description": "Lionel Messi y De Paul",
-    "id": "ee527ba1-a2f4-48f3-a4c4-4983e31f81cb",
-    "image": "1708222082000_img_.jpeg"
-  },
-  {
-    "name": "Messi, Neymar y Suarez",
-    "category": "sadsa",
-    "price": 123123,
-    "stock": "2",
-    "talles": [
-      "37",
-      "38"
-    ],
-    "colors": [
-      "negro",
-      "blanco",
-      "rojo"
-    ],
-    "description": "Ode to the mets",
-    "id": "57447902-4163-49cc-8283-a27d1e99fb45",
-    "image": "1708222271972_img_.jpg"
-  },
-  {
-    "name": "adidas jiji",
-    "category": "adidas",
-    "price": 35000,
-    "stock": "9",
-    "talles": [
-      "37"
-    ],
-    "colors": [
-      "negro",
-      "azul",
-      "blanco",
-      "rojo"
-    ],
-    "description": "fdahfkhjgl",
-    "id": "5f4ec2c9-a12c-4efc-86c3-4b61c9ab8d00",
-    "image": "1708988289155_img_.jpeg"
   }
 ]

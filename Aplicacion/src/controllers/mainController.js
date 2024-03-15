@@ -10,57 +10,6 @@ const mainController = {
     index: (req, res) => {
         return res.render('home');
     },
-    login: (req,res) =>{
-        return res.render('users/login');
-    },
-    register: (req, res) => {
-        return res.render('users/register');
-    },
-    storeUser: (req, res) => {
-        if(validationResult(req).errors.length > 0){
-            console.log("Errores de validación: ", validationResult(req).errors);
-            return res.render('users/register');
-        }else{
-            console.log("Usuario creado correctamente:");
-            const user = {
-                id: crypto.randomUUID(),
-                firstName: req.body.firstName,
-                lastName: req.body.lastName,
-                email: req.body.email,
-                password: bcrypt.hashSync(req.body.password, 10),
-                category: "user",
-                image: "default.jpg",
-            };
-            usuarios.push(user);
-            fs.writeFileSync(usersFilePath, JSON.stringify(usuarios, null, 2));
-            res.redirect('/login');
-        }
-    },
-    processLogin: (req, res) => {
-        if(validationResult(req).errors.length > 0){
-            console.log("Errores de validación: ", validationResult(req).errors);
-            return res.render('users/login');
-        }else{
-            const email = req.body.email;
-            const password = req.body.password;
-            const user = usuarios.find(user => user.email === email);
-            if(user){
-                if(bcrypt.compareSync(password, user.password)){
-                    req.session.user = user;
-                    if(req.body.remember){
-                        res.cookie('userEmail', email, {maxAge: 1000 * 60 * 60 * 24 * 30});
-                    }
-                    return res.redirect('/');
-                }
-            
-            }
-        }
-    },
-    logout: (req, res) => {
-        req.session.destroy();
-        res.clearCookie('userEmail');
-        return res.redirect('/');
-    }
 };
 
 module.exports = mainController;

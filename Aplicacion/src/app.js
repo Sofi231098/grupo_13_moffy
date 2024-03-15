@@ -3,10 +3,11 @@ const path = require('path');
 const app = express();
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
-const rememberAuth = require('./middlewares/rememberAuth');
+const UserLoggedMiddleware = require('./middlewares/UserLoggedMiddleware.js');
 
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 const rutasMain = require('./routes/main.js');
+const rutasUser = require('./routes/user.js');
 const rutasProduct = require('./routes/product.js');
 const rutasProductCart = require('./routes/productCart.js');
 
@@ -18,7 +19,7 @@ app.use(express.json());
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 app.use(cookieParser());
 app.use(session({secret: 'Secret', resave: false, saveUninitialized: false}));
-app.use(rememberAuth);
+app.use(UserLoggedMiddleware);
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
@@ -28,5 +29,6 @@ app.listen(3000, () => {
 });
 
 app.use('/', rutasMain);
+app.use('/', rutasUser);
 app.use('/products', rutasProduct);
 app.use('/carrito', rutasProductCart);
