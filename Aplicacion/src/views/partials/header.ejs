@@ -11,14 +11,19 @@
         <a class="navbar__enlace" href="/products?category=nike">Nike</a>
         <a class="navbar__enlace" href="/products?category=puma">Pumas</a>
     </nav>
-    <div class="header__buttons">
-        <a href="/carrito" class="header__icon" aria-label="Carrito de Compras">
-            <i class="fa-solid fa-bag-shopping"></i>
-        </a>
-        <a href="/login" class="header__icon" aria-label="Usuario">
-            <i class="fa-solid fa-user"></i>
-        </a>
-    </div>
+    <% if(locals.isLogged){ %>
+        <div class="header__buttons">
+            <a href="/logout" class="header__icon" aria-label="Usuario">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>    
+        </div>  
+    <% } else { %>
+        <div class="header__buttons">
+            <a href="/login" class="header__icon" aria-label="Usuario">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    <% } %>
     <div class="header__burgerButton">
         <button class="burgerButton" aria-label="Desplegar Menú">
             <i class="fa-solid fa-bars"></i>

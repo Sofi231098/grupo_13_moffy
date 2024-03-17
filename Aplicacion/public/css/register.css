@@ -35,19 +35,6 @@ form div {
     color: #00F0FF;
 }
 
-.formInput {
-    padding: 8px 0;
-    border: none;
-    color: #fff;
-    background: none;
-    outline: none;
-    border-bottom: 2px solid #fff;
-
-    &:valid{
-        border-bottom: 2px solid #00ff85;
-    }
-}
-
 .contenedorFormulario p {
     margin-top: 24px;
     text-align: center;

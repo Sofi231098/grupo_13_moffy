@@ -84,7 +84,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-
+    text-decoration: none;
     &>i {
         height: 100%;
         display: flex;
@@ -231,9 +231,15 @@ form {
     outline: none;
     border-bottom: 2px solid #fff;
 
-    &:valid {
+    &:user-valid {
         border-bottom: 2px solid #00ff85;
     }
+
+    &:user-invalid {
+        border-bottom: 2px solid #ff0037;
+    }
+
+
     &:-webkit-autofill {
         -webkit-text-fill-color: #fff;
         -webkit-box-shadow: 0 0 0px 1000px #111 inset;
