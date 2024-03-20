@@ -1,24 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Adidas Campus",
-    "description": "Consigue un estilo retro y urbano con las zapatillas adidas Campus. Confeccionadas con ante suave y una suela duradera, son perfectas para un look casual con un toque clásico.",
-    "image": "adidasCampus.jpg",
-    "category": "Adidas",
-    "colors": [
-      "negro",
-      "azul",
-      "blanco"
-    ],
-    "price": 169000,
-    "stock": 4,
-    "talles": [
-      "39",
-      "40",
-      "41"
-    ]
-  },
-  {
     "id": 2,
     "name": "Adidas Forum Low",
     "description": "Dale un toque de estilo retro a tu look con las zapatillas adidas Forum Low. Con su diseño icónico de los años 80, estas zapatillas combinan comodidad y moda. Su parte superior de cuero premium y su suela de caucho te brindan durabilidad y tracción en cada paso. Ya sea para un día casual o para destacar en la calle, las adidas Forum Low son la elección perfecta para un estilo clásico y versátil.",
