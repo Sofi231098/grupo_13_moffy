@@ -28,20 +28,16 @@
     </nav>
     <% if(locals.isLogged){ %>
         <div class="header__buttons">
+            <a href="/profile" class="header__icon" aria-label="Usuario">
+                <i class="fa-solid fa-user"></i>
+            </a>
             <a href="/carrito" class="header__icon" aria-label="Carrito de Compras">
                 <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-            <a href="/login" class="header__icon" aria-label="Usuario">
-                <i class="fa-solid fa-user"></i>
             </a>
             <a href="/logout" class="header__icon" aria-label="Usuario">
                 <i class="fa-solid fa-right-from-bracket"></i>
             </a>    
         </div>  
-        <a href="/profile" class="header__icon" aria-label="Usuario">
-            <i class="fa-solid fa-user"></i>
-        </a>
-        
     <% } else { %>
         <div class="header__buttons">
             <a href="/carrito" class="header__icon" aria-label="Carrito de Compras">
