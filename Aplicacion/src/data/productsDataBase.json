@@ -123,11 +123,11 @@
     "image": "pumaShuffle.jpg",
     "category": "Puma",
     "colors": [
-      "blanco",
-      "negro"
+      "negro",
+      "blanco"
     ],
-    "price": 127000,
-    "stock": 4,
+    "price": 128000,
+    "stock": "4",
     "talles": [
       "37",
       "39",
@@ -197,12 +197,12 @@
     "image": "nikeDunkHigh1985.jpg",
     "category": "Nike",
     "colors": [
-      "rosa",
+      "negro",
       "verde",
-      "negro"
+      "rosa"
     ],
-    "price": 133000,
-    "stock": 1,
+    "price": 134000,
+    "stock": "1",
     "talles": [
       "37",
       "39",

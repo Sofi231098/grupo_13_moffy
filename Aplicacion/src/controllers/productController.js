@@ -3,6 +3,16 @@ const crypto = require('crypto');
 const fs = require('fs');
 const products = require('../data/productsDataBase.json');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+const productLogsPath = path.join(__dirname, '../logs/productLogs.txt');
+
+const logProductActivity = async (message) => {
+    const log = `${message} a las ${new Date().toLocaleString()}\n`;
+    try {
+        await fs.promises.appendFile(productLogsPath, log);
+    } catch (error) {
+        console.error('Error writing to log file', error);
+    }
+};
 
 const productController = {
     product: (req, res) => {
@@ -41,7 +51,7 @@ const productController = {
     productRegister: (req, res) => {
         return res.render('products/productRegister');
     },
-    productStore: (req, res) => {
+    productStore: async (req, res) => {
         const image = req.file.filename;
         const newProduct = {
             ...req.body,
@@ -53,6 +63,7 @@ const productController = {
         newProduct.price = Number(newProduct.price);
         products.push(newProduct);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+        await logProductActivity(`El usuario: ${req.session.user.email} creó el producto: ${newProduct.name}`);
         return res.redirect('/products');
     },
     productEdit: (req, res) => {
@@ -60,7 +71,7 @@ const productController = {
         const product = products.find(product => product.id == id);
         return res.render('products/productEdit', { product });
     },
-    productUpdate: (req, res) => {
+    productUpdate: async (req, res) => {
         const { id } = req.params;
         const producto = (req.file) ? { ...req.body, image: req.file.filename } : { ...req.body };
         typeof (req.body.talles) === 'string' ? producto.talles = [req.body.talles] : producto.talles = req.body.talles;
@@ -72,6 +83,7 @@ const productController = {
             ...producto
         };
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+        await logProductActivity(`El usuario: ${req.session.user.email} editó el producto: ${products[indexProduct].name}`);
         return res.redirect('/products');
     },
     productDetail: (req, res) => {
@@ -79,11 +91,12 @@ const productController = {
         const productDetail = products.find(product => product.id == id);
         return res.render('products/productDetail', { producto: productDetail });
     },
-    productDelete: (req, res) => {
+    productDelete: async (req, res) => {
         const { id } = req.params;
         const indexProduct = products.findIndex(product => product.id == id);
         products.splice(indexProduct, 1);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+        await logProductActivity(`El usuario: ${req.session.user.email} eliminó el producto: ${products[indexProduct].name}`);
         return res.redirect('/products');
     }
 };
