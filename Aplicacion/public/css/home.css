@@ -28,7 +28,22 @@
 
 .nuevosProductos{
     
-    background: linear-gradient(to bottom, #ff165c 0%, #69006d 75%);
+    background-image: linear-gradient(
+		45deg,
+		hsl(240deg 100% 20%) 0%,
+		hsl(289deg 100% 21%) 11%,
+		hsl(315deg 100% 27%) 22%,
+		hsl(329deg 100% 36%) 33%,
+		hsl(337deg 100% 43%) 44%,
+		hsl(357deg 91% 59%) 56%,
+		hsl(17deg 100% 59%) 67%,
+		hsl(34deg 100% 53%) 78%,
+		hsl(45deg 100% 50%) 89%,
+		hsl(55deg 100% 50%) 100%
+	);
+    background-size: 180% 180%;
+    animation: gradient 6s ease infinite;
+    transition: transform 300ms ease-in-out;
 
     & > img{
         margin-inline: auto;
@@ -36,6 +51,22 @@
         height: 200px;
         border-radius: 100%;
     }
+
+    &:hover{
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .buscarProductos{

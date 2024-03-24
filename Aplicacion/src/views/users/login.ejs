@@ -24,20 +24,30 @@
     <main class="main-login">
       <section class="form-login">
         <h2 class="login-titulo">BIENVENIDO A MOFFY SPORTS</h2>
-        <form>
+        <form action="/login" method="POST">
             <div>
                 <label for="email" class="formLabel">Correo electrónico <span class="labelRequired">*</span></label>
                 <input type="email" placeholder="max11carrillo@gmail.com" id="email" class="formInput" name="email" required>
+                <% if (locals.errors && errors.email) { %>
+                    <label class="label--error"><%= errors.email.msg %></label>
+                <% } %>
             </div>
             <div>
                 <label for="password" class="formLabel">Contraseña <span class="labelRequired">*</span></label>
                 <input type="password" placeholder="maxcarrillo123" id="password" class="formInput" name="password" required>
+                <% if (locals.errors && errors.password) { %>
+                    <label class="label--error"><%= errors.password.msg %></label>
+                <% } %>
+            </div>
+            <div class="cheboxGroup--simple">
+                <label for="remember" class="formLabel">Recordar mi cuenta</label>
+                <input type="checkbox" id="remember" name="remember">
             </div>
             <button class="boton" type="submit">Iniciar Sesión</button>
         </form> 
         <p>¿No tenés cuenta? <a href="/registro" class="link-registro">Registrarme</a></p>
       </section>
     </main>
+    <%- include('../partials/footer') %>
 </body>
-<%- include('../partials/footer') %>
 </html>

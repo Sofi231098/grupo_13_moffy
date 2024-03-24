@@ -38,25 +38,6 @@ form div{
     color: #00ff85;
 }
 
-.formInput{
-    padding: 8px 0;
-    border: none;
-    color: #fff;
-    background: none;
-    outline: none;
-    border-bottom: 2px solid #fff;
-
-    &:valid{
-        border-bottom: 2px solid #00ff85;
-    }
-    &:invalid{
-        border-bottom: 2px solid #ff0037;
-    }
-    &:focus{
-        border-bottom: 2px solid #fff;
-    }
-}
-
 .boton{
     border-radius: 8px;
     padding-block: 8px;
@@ -89,6 +70,9 @@ form div{
     }
 }
 
-
-   
-
+.cheboxGroup--simple{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}

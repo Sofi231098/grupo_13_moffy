@@ -1,24 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Adidas Campus",
-    "description": "Consigue un estilo retro y urbano con las zapatillas adidas Campus. Confeccionadas con ante suave y una suela duradera, son perfectas para un look casual con un toque clásico.",
-    "image": "adidasCampus.jpg",
-    "category": "Adidas",
-    "colors": [
-      "negro",
-      "azul",
-      "blanco"
-    ],
-    "price": 169000,
-    "stock": 4,
-    "talles": [
-      "39",
-      "40",
-      "41"
-    ]
-  },
-  {
     "id": 2,
     "name": "Adidas Forum Low",
     "description": "Dale un toque de estilo retro a tu look con las zapatillas adidas Forum Low. Con su diseño icónico de los años 80, estas zapatillas combinan comodidad y moda. Su parte superior de cuero premium y su suela de caucho te brindan durabilidad y tracción en cada paso. Ya sea para un día casual o para destacar en la calle, las adidas Forum Low son la elección perfecta para un estilo clásico y versátil.",
@@ -142,11 +123,11 @@
     "image": "pumaShuffle.jpg",
     "category": "Puma",
     "colors": [
-      "blanco",
-      "negro"
+      "negro",
+      "blanco"
     ],
-    "price": 127000,
-    "stock": 4,
+    "price": 128000,
+    "stock": "4",
     "talles": [
       "37",
       "39",
@@ -216,71 +197,17 @@
     "image": "nikeDunkHigh1985.jpg",
     "category": "Nike",
     "colors": [
-      "rosa",
+      "negro",
       "verde",
-      "negro"
+      "rosa"
     ],
-    "price": 133000,
-    "stock": 1,
+    "price": 134000,
+    "stock": "1",
     "talles": [
       "37",
       "39",
       "40",
       "42"
     ]
-  },
-  {
-    "name": "Messi y De Paul",
-    "category": "Probando",
-    "price": 12321321,
-    "stock": "1",
-    "talles": [
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "negro",
-      "azul"
-    ],
-    "description": "Lionel Messi y De Paul",
-    "id": "ee527ba1-a2f4-48f3-a4c4-4983e31f81cb",
-    "image": "1708222082000_img_.jpeg"
-  },
-  {
-    "name": "Messi, Neymar y Suarez",
-    "category": "sadsa",
-    "price": 123123,
-    "stock": "2",
-    "talles": [
-      "37",
-      "38"
-    ],
-    "colors": [
-      "negro",
-      "blanco",
-      "rojo"
-    ],
-    "description": "Ode to the mets",
-    "id": "57447902-4163-49cc-8283-a27d1e99fb45",
-    "image": "1708222271972_img_.jpg"
-  },
-  {
-    "name": "adidas jiji",
-    "category": "adidas",
-    "price": 35000,
-    "stock": "9",
-    "talles": [
-      "37"
-    ],
-    "colors": [
-      "negro",
-      "azul",
-      "blanco",
-      "rojo"
-    ],
-    "description": "fdahfkhjgl",
-    "id": "5f4ec2c9-a12c-4efc-86c3-4b61c9ab8d00",
-    "image": "1708988289155_img_.jpeg"
   }
 ]

@@ -25,22 +25,46 @@
     <main class="mainRegistro">
         <section class="contenedorFormulario">
             <h2 class="formulario__titulo">BIENVENIDO A MOFFY SPORTS</h2>
-            <form>
+            <form action="/registro" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label for="name" class="formLabel">Nombre</label>
+                    <input type="text" id="name" placeholder="Sofia Trinidad" class="formInput" name="firstName"/>
+                </div>
+                <div>
+                    <label for="lastName" class="formLabel">Apellido</label>
+                    <input type="text" id="lastName" placeholder="Yañez" class="formInput" name="lastName"/>
+                </div>
                 <div>
                     <label for="email" class="formLabel">Correo Electrónico <span class="labelRequired">*</span></label>
                     <input type="email" id="email" placeholder="abrilyanez123@gmail.com" class="formInput" name="email" required/>
+                    <% if (locals.errors && errors.email) { %>
+                        <label class="label--error"><%= errors.email.msg %></label>
+                    <% } %>
                 </div>
                 <div>
                     <label for="user" class="formLabel">Usuario <span class="labelRequired">*</span></label>
                     <input type="text" id="user" placeholder="sofiyañez123" class="formInput" name="usuario" required/>
+                    <% if (locals.errors && errors.usuario) { %>
+                        <label class="label--error"><%= errors.usuario.msg %></label>
+                    <% } %>
                 </div>
                 <div>
                     <label for="password" class="formLabel">Contraseña <span class="labelRequired">*</span></label>
                     <input type="password" id="password" placeholder="•••••••••••" class="formInput" name="password" required/>
+                    <% if (locals.errors && errors.password) { %>
+                        <label class="label--error"><%= errors.password.msg %></label>
+                    <% } %>
                 </div>
                 <div>
                     <label for="repassword" class="formLabel">Repetir Contraseña <span class="labelRequired">*</span></label>
                     <input type="password" id="repassword" placeholder="•••••••••••" class="formInput" name="repeatPassword" required/>
+                    <% if (locals.errors && errors.repeatPassword) { %>
+                        <label class="label--error"><%= errors.repeatPassword.msg %></label>
+                    <% } %>
+                </div>
+                <div>
+                    <label for="image" class="formLabel">Imagen <span class="labelRequired">*</span></label>
+                    <input type="file" id="image" accept="image/*" class="formInput" name="image" required/>
                 </div>
                 <button class="button--cyan" type="submit">Registrarme</button>
             </form>

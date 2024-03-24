@@ -3,6 +3,45 @@ body {
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
     font-display: swap;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1 0 auto; 
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.header__info{
+    padding-block: 8px;
+    padding-inline: 16px;
+    background-color: rgb(0 0 0 / 50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    & *{
+        margin: 0;
+    }
+
+    & > div > a{
+        text-decoration: none;
+        color: #00ff85;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    & > div > a + a {
+        margin-left: 8px;
+    }
 }
 
 .header {
@@ -72,7 +111,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-
+    text-decoration: none;
     &>i {
         height: 100%;
         display: flex;
@@ -219,16 +258,18 @@ form {
     outline: none;
     border-bottom: 2px solid #fff;
 
-    &:invalid {
-        border-bottom: 2px solid #ff0037;
-    }
-
-    &:valid {
+    &:user-valid {
         border-bottom: 2px solid #00ff85;
     }
 
-    &:focus {
-        border-bottom: 2px solid #fff;
+    &:user-invalid {
+        border-bottom: 2px solid #ff0037;
+    }
+
+
+    &:-webkit-autofill {
+        -webkit-text-fill-color: #fff;
+        -webkit-box-shadow: 0 0 0px 1000px #111 inset;
     }
 }
 
@@ -289,5 +330,10 @@ form {
 }
 
 .labelRequired {
+    color: #ff0037;
+}
+
+.label--error{
+    margin-top: 4px;
     color: #ff0037;
 }

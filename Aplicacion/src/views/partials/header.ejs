@@ -1,3 +1,18 @@
+<section class="header__info">
+    <p>
+        Envió a todo el país 🚛
+    </p>
+    <% if(locals.isLogged){ %>
+        <p>
+            Hola, <%= locals.user.firstName %>!
+        </p>
+    <% } else {%>
+        <div>
+            <a href="/login">Iniciar sesión</a>
+            <a href="/registro">Registrarse</a>
+        </div>
+    <% } %>
+</section>
 <header class="header">
     <figure class="header__logo">
         <img class="logo__img" src="/images/moffysports.jpg" alt="Logo Moffy Sports">
@@ -11,14 +26,28 @@
         <a class="navbar__enlace" href="/products?category=nike">Nike</a>
         <a class="navbar__enlace" href="/products?category=puma">Pumas</a>
     </nav>
-    <div class="header__buttons">
-        <a href="/carrito" class="header__icon" aria-label="Carrito de Compras">
-            <i class="fa-solid fa-bag-shopping"></i>
-        </a>
-        <a href="/login" class="header__icon" aria-label="Usuario">
-            <i class="fa-solid fa-user"></i>
-        </a>
-    </div>
+    <% if(locals.isLogged){ %>
+        <div class="header__buttons">
+            <a href="/profile" class="header__icon" aria-label="Usuario">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="/carrito" class="header__icon" aria-label="Carrito de Compras">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="/logout" class="header__icon" aria-label="Usuario">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>    
+        </div>  
+    <% } else { %>
+        <div class="header__buttons">
+            <a href="/carrito" class="header__icon" aria-label="Carrito de Compras">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="/login" class="header__icon" aria-label="Usuario">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </a>
+        </div>
+    <% } %>
     <div class="header__burgerButton">
         <button class="burgerButton" aria-label="Desplegar Menú">
             <i class="fa-solid fa-bars"></i>
