@@ -35,5 +35,14 @@
     "password": "$2a$10$nl9DAlE2vEmQOibETyr3cu5AuYy1K0KMgO8mf0wBqIh4.QJ98GfZ2",
     "category": "user",
     "image": "1710509702003_img_.jpg"
+  },
+  {
+    "id": "1261ca46-aafe-4a2d-805f-cf3eebab8919",
+    "firstName": "Abril",
+    "lastName": "Yáñez",
+    "email": "abril123@gmail.com",
+    "password": "$2a$10$AA5RlCkfJc5dCCx1M0rBQOYZCV1TPkPg2r1rFIfiPAptQYkSmBuwa",
+    "category": "user",
+    "image": "1710689466636_img_.jpg"
   }
 ]
