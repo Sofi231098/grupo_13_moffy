@@ -32,3 +32,8 @@ app.use('/', rutasMain);
 app.use('/', rutasUser);
 app.use('/products', rutasProduct);
 app.use('/carrito', rutasProductCart);
+
+app.use((req, res, next) => {
+    res.status(404).render('not-found');
+    next();
+})
